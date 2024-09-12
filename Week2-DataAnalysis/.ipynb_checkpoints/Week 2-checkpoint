@@ -1,0 +1,281 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "79e55248-b1ca-440c-abaa-543b58c8acd1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Assignment.md  \u001b[0m\u001b[01;34mData\u001b[0m/  README.md  Untitled.ipynb\n"
+     ]
+    }
+   ],
+   "source": [
+    "ls\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "a0a9ee74-a65f-423c-8050-d059ba2100ba",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "/scratch/work/courses/CHEM-GA-2671-2024fa/students/ra3194/comp-lab-class-2024/Week2-DataAnalysis/Data\n"
+     ]
+    }
+   ],
+   "source": [
+    "cd Data/"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "59e5f0dd-5883-41b9-9b03-ac7a061447d7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pandas as pd\n",
+    "import matplotlib.pyplot as plt"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "549363c1-692e-40e8-a91b-3e331f72e41c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    " data = pd.read_csv(\"1hz3_T310.run.25000000.energy.xvg\", skiprows=29, delim_whitespace=True, header=None)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "579c2d40-47aa-4f7d-b0d4-640a61c0abbd",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>0</th>\n",
+       "      <th>1</th>\n",
+       "      <th>2</th>\n",
+       "      <th>3</th>\n",
+       "      <th>4</th>\n",
+       "      <th>5</th>\n",
+       "      <th>6</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>0.0</td>\n",
+       "      <td>-175680.937500</td>\n",
+       "      <td>35128.644531</td>\n",
+       "      <td>-140552.296875</td>\n",
+       "      <td>309.853302</td>\n",
+       "      <td>84.967438</td>\n",
+       "      <td>137.956879</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>100.0</td>\n",
+       "      <td>-175387.062500</td>\n",
+       "      <td>35737.015625</td>\n",
+       "      <td>-139650.046875</td>\n",
+       "      <td>315.219452</td>\n",
+       "      <td>116.084549</td>\n",
+       "      <td>137.819077</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>200.0</td>\n",
+       "      <td>-175059.531250</td>\n",
+       "      <td>35401.789062</td>\n",
+       "      <td>-139657.750000</td>\n",
+       "      <td>312.262573</td>\n",
+       "      <td>-85.727356</td>\n",
+       "      <td>137.437531</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>300.0</td>\n",
+       "      <td>-175760.984375</td>\n",
+       "      <td>35717.289062</td>\n",
+       "      <td>-140043.687500</td>\n",
+       "      <td>315.045502</td>\n",
+       "      <td>269.017548</td>\n",
+       "      <td>135.811859</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>400.0</td>\n",
+       "      <td>-174898.718750</td>\n",
+       "      <td>35252.562500</td>\n",
+       "      <td>-139646.156250</td>\n",
+       "      <td>310.946320</td>\n",
+       "      <td>-129.284088</td>\n",
+       "      <td>137.846680</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>...</th>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>496</th>\n",
+       "      <td>49600.0</td>\n",
+       "      <td>-176148.750000</td>\n",
+       "      <td>35003.425781</td>\n",
+       "      <td>-141145.328125</td>\n",
+       "      <td>308.748810</td>\n",
+       "      <td>123.643768</td>\n",
+       "      <td>136.727814</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>497</th>\n",
+       "      <td>49700.0</td>\n",
+       "      <td>-175596.437500</td>\n",
+       "      <td>35622.363281</td>\n",
+       "      <td>-139974.078125</td>\n",
+       "      <td>314.208221</td>\n",
+       "      <td>76.174149</td>\n",
+       "      <td>137.710068</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>498</th>\n",
+       "      <td>49800.0</td>\n",
+       "      <td>-175233.296875</td>\n",
+       "      <td>35012.890625</td>\n",
+       "      <td>-140220.406250</td>\n",
+       "      <td>308.832306</td>\n",
+       "      <td>25.778091</td>\n",
+       "      <td>138.378967</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>499</th>\n",
+       "      <td>49900.0</td>\n",
+       "      <td>-175552.906250</td>\n",
+       "      <td>35534.488281</td>\n",
+       "      <td>-140018.421875</td>\n",
+       "      <td>313.433105</td>\n",
+       "      <td>-133.103729</td>\n",
+       "      <td>138.065186</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>500</th>\n",
+       "      <td>50000.0</td>\n",
+       "      <td>-175183.906250</td>\n",
+       "      <td>34867.031250</td>\n",
+       "      <td>-140316.875000</td>\n",
+       "      <td>307.545776</td>\n",
+       "      <td>-132.031494</td>\n",
+       "      <td>138.603043</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "<p>501 rows × 7 columns</p>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "           0              1             2              3           4  \\\n",
+       "0        0.0 -175680.937500  35128.644531 -140552.296875  309.853302   \n",
+       "1      100.0 -175387.062500  35737.015625 -139650.046875  315.219452   \n",
+       "2      200.0 -175059.531250  35401.789062 -139657.750000  312.262573   \n",
+       "3      300.0 -175760.984375  35717.289062 -140043.687500  315.045502   \n",
+       "4      400.0 -174898.718750  35252.562500 -139646.156250  310.946320   \n",
+       "..       ...            ...           ...            ...         ...   \n",
+       "496  49600.0 -176148.750000  35003.425781 -141145.328125  308.748810   \n",
+       "497  49700.0 -175596.437500  35622.363281 -139974.078125  314.208221   \n",
+       "498  49800.0 -175233.296875  35012.890625 -140220.406250  308.832306   \n",
+       "499  49900.0 -175552.906250  35534.488281 -140018.421875  313.433105   \n",
+       "500  50000.0 -175183.906250  34867.031250 -140316.875000  307.545776   \n",
+       "\n",
+       "              5           6  \n",
+       "0     84.967438  137.956879  \n",
+       "1    116.084549  137.819077  \n",
+       "2    -85.727356  137.437531  \n",
+       "3    269.017548  135.811859  \n",
+       "4   -129.284088  137.846680  \n",
+       "..          ...         ...  \n",
+       "496  123.643768  136.727814  \n",
+       "497   76.174149  137.710068  \n",
+       "498   25.778091  138.378967  \n",
+       "499 -133.103729  138.065186  \n",
+       "500 -132.031494  138.603043  \n",
+       "\n",
+       "[501 rows x 7 columns]"
+      ]
+     },
+     "execution_count": 12,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "data"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "51fabd3a-b5d1-488a-92ba-9f4e306af2c1",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "lab_env_2024",
+   "language": "python",
+   "name": "lab_env_2024"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.12"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
