@@ -47,3 +47,14 @@ Back Off! I just backed up md_0_1.xtc to ./#md_0_1.xtc.1#
 Back Off! I just backed up md_0_1.edr to ./#md_0_1.edr.1#
 starting mdrun 'TRP-CAGE in water'
 5000000 steps,  10000.0 ps.
+
+Writing final coordinates.
+
+               Core t (s)   Wall t (s)        (%)
+       Time:    26494.193    26494.200      100.0
+                         7h21:34
+                 (ns/day)    (hour/ns)
+Performance:       32.611        0.736
+
+GROMACS reminds you: "But I always say, one's company, two's a crowd, and three's a party." (Andy Warhol)
+
