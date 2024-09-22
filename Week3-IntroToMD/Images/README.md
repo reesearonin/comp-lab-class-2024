@@ -1,1 +1,1 @@
-This contains an image of the TRP-Cage protein without water generated in VMD using a ribbon structure. 
+This contains an image of the trp-cage protein without water generated in VMD using a ribbon structure. 
