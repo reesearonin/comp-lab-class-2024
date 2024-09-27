@@ -1,0 +1,1422 @@
+                      :-) GROMACS - gmx grompp, 2023.3 (-:
+
+Executable:   /ext3/apps/gromacs/2023.3/openmpi/intel/bin/gmx_mpi
+Data prefix:  /ext3/apps/gromacs/2023.3/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2024fa/students/ra3194/comp-lab-class-2024/Week4-CharmmGuiSetup/Art-Est Charm Files/gromacs
+Command line:
+  gmx_mpi grompp -f step4.0_minimization.mdp -o step4.0_minimization.tpr -c step3_input.gro -r step3_input.gro -p topol.top -n index.ndx -maxwarn 2
+
+Generating 1-4 interactions: fudge = 0.5
+Number of degrees of freedom in T-Coupling group rest is 24778.00
+The integrator does not provide a ensemble temperature, there is no system ensemble temperature
+
+NOTE 1 [file step4.0_minimization.mdp]:
+  Removing center of mass motion in the presence of position restraints
+  might cause artifacts. When you are using position restraints to
+  equilibrate a macro-molecule, the artifacts are usually negligible.
+
+
+There was 1 NOTE
+
+GROMACS reminds you: "Baby, It Aint Over Till It's Over" (Lenny Kravitz)
+
+Setting the LD random seed to -1166084145
+
+Generated 1035 of the 1035 non-bonded parameter combinations
+
+Generated 1035 of the 1035 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'PROA'
+
+turning H bonds into constraints...
+
+Excluding 1 bonded neighbours molecule type 'K+'
+
+turning H bonds into constraints...
+
+Excluding 1 bonded neighbours molecule type 'Cl-'
+
+turning H bonds into constraints...
+
+Excluding 1 bonded neighbours molecule type 'OPC'
+
+turning H bonds into constraints...
+
+Cleaning up constraints and constant bonded interactions with virtual sites
+
+The largest distance between excluded atoms is 0.405 nm between atom 230 and 238
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 44x44x44, spacing 0.116 0.116 0.116
+
+Estimate for the relative computational load of the PME mesh part: 0.23
+
+This run will generate roughly 1 Mb of data
+                      :-) GROMACS - gmx mdrun, 2023.3 (-:
+
+Executable:   /ext3/apps/gromacs/2023.3/openmpi/intel/bin/gmx_mpi
+Data prefix:  /ext3/apps/gromacs/2023.3/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2024fa/students/ra3194/comp-lab-class-2024/Week4-CharmmGuiSetup/Art-Est Charm Files/gromacs
+Command line:
+  gmx_mpi mdrun -v -deffnm step4.0_minimization
+
+Compiled SIMD is AVX2_256, but CPU also supports AVX_512 (see log).
+Reading file step4.0_minimization.tpr, VERSION 2023.3 (single precision)
+Using 4 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Steepest Descents:
+   Tolerance (Fmax)   =  1.00000e+03
+   Number of steps    =         5000
+Step=    0, Dmax= 1.0e-02 nm, Epot= -2.23634e+05 Fmax= 3.03289e+03, atom= 525
+Step=    1, Dmax= 1.0e-02 nm, Epot= -2.24579e+05 Fmax= 5.85494e+03, atom= 291
+Step=    2, Dmax= 1.2e-02 nm, Epot= -2.24801e+05 Fmax= 1.04350e+04, atom= 499
+Step=    3, Dmax= 1.4e-02 nm, Epot= -2.25209e+05 Fmax= 1.14008e+04, atom= 499
+Step=    4, Dmax= 1.7e-02 nm, Epot= -2.25416e+05 Fmax= 1.46896e+04, atom= 499
+Step=    5, Dmax= 2.1e-02 nm, Epot= -2.25627e+05 Fmax= 1.70570e+04, atom= 499
+Step=    6, Dmax= 2.5e-02 nm, Epot= -2.25758e+05 Fmax= 2.04946e+04, atom= 499
+Step=    7, Dmax= 3.0e-02 nm, Epot= -2.25837e+05 Fmax= 2.49717e+04, atom= 499
+Step=    8, Dmax= 3.6e-02 nm, Epot= -2.25884e+05 Fmax= 2.88620e+04, atom= 499
+Step=    9, Dmax= 4.3e-02 nm, Epot= -2.25783e+05 Fmax= 3.59446e+04, atom= 499Step=   10, Dmax= 2.1e-02 nm, Epot= -2.26477e+05 Fmax= 3.88568e+03, atom= 499
+Step=   11, Dmax= 2.6e-02 nm, Epot= -2.26489e+05 Fmax= 3.34219e+04, atom= 499
+Step=   12, Dmax= 3.1e-02 nm, Epot= -2.27063e+05 Fmax= 1.40523e+04, atom= 499
+Step=   13, Dmax= 3.7e-02 nm, Epot= -2.26401e+05 Fmax= 4.16283e+04, atom= 499Step=   14, Dmax= 1.9e-02 nm, Epot= -2.27158e+05 Fmax= 1.38683e+04, atom= 499
+Step=   15, Dmax= 2.2e-02 nm, Epot= -2.27155e+05 Fmax= 2.02856e+04, atom= 499Step=   16, Dmax= 1.1e-02 nm, Epot= -2.27316e+05 Fmax= 3.27395e+03, atom= 499
+Step=   17, Dmax= 1.3e-02 nm, Epot= -2.27452e+05 Fmax= 1.61509e+04, atom= 499
+Step=   18, Dmax= 1.6e-02 nm, Epot= -2.27619e+05 Fmax= 8.46846e+03, atom= 499
+Step=   19, Dmax= 1.9e-02 nm, Epot= -2.27565e+05 Fmax= 2.03447e+04, atom= 499Step=   20, Dmax= 9.6e-03 nm, Epot= -2.27704e+05 Fmax= 5.94737e+03, atom= 499
+Step=   21, Dmax= 1.2e-02 nm, Epot= -2.27761e+05 Fmax= 1.19913e+04, atom= 499
+Step=   22, Dmax= 1.4e-02 nm, Epot= -2.27858e+05 Fmax= 8.87494e+03, atom= 499
+Step=   23, Dmax= 1.7e-02 nm, Epot= -2.27854e+05 Fmax= 1.67483e+04, atom= 499Step=   24, Dmax= 8.3e-03 nm, Epot= -2.27944e+05 Fmax= 3.95608e+03, atom= 499
+Step=   25, Dmax= 1.0e-02 nm, Epot= -2.28023e+05 Fmax= 1.07541e+04, atom= 499
+Step=   26, Dmax= 1.2e-02 nm, Epot= -2.28112e+05 Fmax= 7.67712e+03, atom= 499
+Step=   27, Dmax= 1.4e-02 nm, Epot= -2.28131e+05 Fmax= 1.38498e+04, atom= 499
+Step=   28, Dmax= 1.7e-02 nm, Epot= -2.28211e+05 Fmax= 1.25880e+04, atom= 499
+Step=   29, Dmax= 2.1e-02 nm, Epot= -2.28185e+05 Fmax= 1.85579e+04, atom= 499Step=   30, Dmax= 1.0e-02 nm, Epot= -2.28328e+05 Fmax= 3.01118e+03, atom= 499
+Step=   31, Dmax= 1.2e-02 nm, Epot= -2.28378e+05 Fmax= 1.65276e+04, atom= 499
+Step=   32, Dmax= 1.5e-02 nm, Epot= -2.28540e+05 Fmax= 6.01405e+03, atom= 499
+Step=   33, Dmax= 1.8e-02 nm, Epot= -2.28438e+05 Fmax= 2.16428e+04, atom= 499Step=   34, Dmax= 8.9e-03 nm, Epot= -2.28591e+05 Fmax= 7.82408e+03, atom= 499
+Step=   35, Dmax= 1.1e-02 nm, Epot= -2.28642e+05 Fmax= 8.28760e+03, atom= 499
+Step=   36, Dmax= 1.3e-02 nm, Epot= -2.28673e+05 Fmax= 1.15441e+04, atom= 499
+Step=   37, Dmax= 1.5e-02 nm, Epot= -2.28720e+05 Fmax= 1.17447e+04, atom= 499
+Step=   38, Dmax= 1.9e-02 nm, Epot= -2.28710e+05 Fmax= 1.66709e+04, atom= 499Step=   39, Dmax= 9.3e-03 nm, Epot= -2.28822e+05 Fmax= 2.48982e+03, atom= 499
+Step=   40, Dmax= 1.1e-02 nm, Epot= -2.28894e+05 Fmax= 1.37148e+04, atom= 499
+Step=   41, Dmax= 1.3e-02 nm, Epot= -2.29005e+05 Fmax= 6.77199e+03, atom= 499
+Step=   42, Dmax= 1.6e-02 nm, Epot= -2.28954e+05 Fmax= 1.72539e+04, atom= 499Step=   43, Dmax= 8.0e-03 nm, Epot= -2.29056e+05 Fmax= 5.24675e+03, atom= 499
+Step=   44, Dmax= 9.6e-03 nm, Epot= -2.29086e+05 Fmax= 9.65283e+03, atom= 499
+Step=   45, Dmax= 1.2e-02 nm, Epot= -2.29143e+05 Fmax= 7.73514e+03, atom= 499
+Step=   46, Dmax= 1.4e-02 nm, Epot= -2.29140e+05 Fmax= 1.35782e+04, atom= 499Step=   47, Dmax= 6.9e-03 nm, Epot= -2.29201e+05 Fmax= 2.93301e+03, atom= 499
+Step=   48, Dmax= 8.3e-03 nm, Epot= -2.29252e+05 Fmax= 9.30745e+03, atom= 499
+Step=   49, Dmax= 1.0e-02 nm, Epot= -2.29314e+05 Fmax= 6.02284e+03, atom= 499
+Step=   50, Dmax= 1.2e-02 nm, Epot= -2.29320e+05 Fmax= 1.19135e+04, atom= 499
+Step=   51, Dmax= 1.4e-02 nm, Epot= -2.29380e+05 Fmax= 1.00939e+04, atom= 499
+Step=   52, Dmax= 1.7e-02 nm, Epot= -2.29351e+05 Fmax= 1.58689e+04, atom= 499Step=   53, Dmax= 8.6e-03 nm, Epot= -2.29454e+05 Fmax= 2.90166e+03, atom= 499
+Step=   54, Dmax= 1.0e-02 nm, Epot= -2.29475e+05 Fmax= 1.32783e+04, atom= 499
+Step=   55, Dmax= 1.2e-02 nm, Epot= -2.29576e+05 Fmax= 5.48883e+03, atom= 499
+Step=   56, Dmax= 1.5e-02 nm, Epot= -2.29512e+05 Fmax= 1.74966e+04, atom= 499Step=   57, Dmax= 7.4e-03 nm, Epot= -2.29613e+05 Fmax= 6.00928e+03, atom= 499
+Step=   58, Dmax= 8.9e-03 nm, Epot= -2.29644e+05 Fmax= 7.40196e+03, atom= 499
+Step=   59, Dmax= 1.1e-02 nm, Epot= -2.29671e+05 Fmax= 9.09232e+03, atom= 499
+Step=   60, Dmax= 1.3e-02 nm, Epot= -2.29696e+05 Fmax= 1.03039e+04, atom= 499
+Step=   61, Dmax= 1.5e-02 nm, Epot= -2.29701e+05 Fmax= 1.33533e+04, atom= 499
+Step=   62, Dmax= 1.9e-02 nm, Epot= -2.29717e+05 Fmax= 1.46218e+04, atom= 499
+Step=   63, Dmax= 2.2e-02 nm, Epot= -2.29677e+05 Fmax= 1.92988e+04, atom= 499Step=   64, Dmax= 1.1e-02 nm, Epot= -2.29846e+05 Fmax= 2.37786e+03, atom= 499
+Step=   65, Dmax= 1.3e-02 nm, Epot= -2.29840e+05 Fmax= 1.72008e+04, atom= 499Step=   66, Dmax= 6.7e-03 nm, Epot= -2.29893e+05 Fmax= 7.39144e+03, atom= 499
+Step=   67, Dmax= 8.0e-03 nm, Epot= -2.29937e+05 Fmax= 4.92307e+03, atom= 499
+Step=   68, Dmax= 9.6e-03 nm, Epot= -2.29951e+05 Fmax= 9.46603e+03, atom= 499
+Step=   69, Dmax= 1.2e-02 nm, Epot= -2.29994e+05 Fmax= 8.21667e+03, atom= 499
+Step=   70, Dmax= 1.4e-02 nm, Epot= -2.29986e+05 Fmax= 1.26296e+04, atom= 499Step=   71, Dmax= 6.9e-03 nm, Epot= -2.30046e+05 Fmax= 2.21480e+03, atom= 499
+Step=   72, Dmax= 8.3e-03 nm, Epot= -2.30080e+05 Fmax= 1.08201e+04, atom= 499
+Step=   73, Dmax= 1.0e-02 nm, Epot= -2.30151e+05 Fmax= 4.24406e+03, atom= 499
+Step=   74, Dmax= 1.2e-02 nm, Epot= -2.30123e+05 Fmax= 1.42453e+04, atom= 499Step=   75, Dmax= 6.0e-03 nm, Epot= -2.30181e+05 Fmax= 5.00388e+03, atom= 499
+Step=   76, Dmax= 7.2e-03 nm, Epot= -2.30209e+05 Fmax= 5.76022e+03, atom= 499
+Step=   77, Dmax= 8.6e-03 nm, Epot= -2.30232e+05 Fmax= 7.49913e+03, atom= 499
+Step=   78, Dmax= 1.0e-02 nm, Epot= -2.30257e+05 Fmax= 8.07161e+03, atom= 499
+Step=   79, Dmax= 1.2e-02 nm, Epot= -2.30264e+05 Fmax= 1.09448e+04, atom= 499
+Step=   80, Dmax= 1.5e-02 nm, Epot= -2.30286e+05 Fmax= 1.15252e+04, atom= 499
+Step=   81, Dmax= 1.8e-02 nm, Epot= -2.30262e+05 Fmax= 1.57542e+04, atom= 499Step=   82, Dmax= 8.9e-03 nm, Epot= -2.30369e+05 Fmax= 2.13453e+03, atom= 499
+Step=   83, Dmax= 1.1e-02 nm, Epot= -2.30383e+05 Fmax= 1.36199e+04, atom= 499
+Step=   84, Dmax= 1.3e-02 nm, Epot= -2.30480e+05 Fmax= 6.05178e+03, atom= 499
+Step=   85, Dmax= 1.5e-02 nm, Epot= -2.30400e+05 Fmax= 1.71477e+04, atom= 499Step=   86, Dmax= 7.7e-03 nm, Epot= -2.30509e+05 Fmax= 5.55318e+03, atom= 499
+Step=   87, Dmax= 9.2e-03 nm, Epot= -2.30521e+05 Fmax= 8.69446e+03, atom= 499
+Step=   88, Dmax= 1.1e-02 nm, Epot= -2.30551e+05 Fmax= 8.07359e+03, atom= 499
+Step=   89, Dmax= 1.3e-02 nm, Epot= -2.30540e+05 Fmax= 1.23543e+04, atom= 499Step=   90, Dmax= 6.7e-03 nm, Epot= -2.30599e+05 Fmax= 2.14952e+03, atom= 499
+Step=   91, Dmax= 8.0e-03 nm, Epot= -2.30627e+05 Fmax= 9.64987e+03, atom= 499
+Step=   92, Dmax= 9.6e-03 nm, Epot= -2.30681e+05 Fmax= 5.05559e+03, atom= 499
+Step=   93, Dmax= 1.1e-02 nm, Epot= -2.30660e+05 Fmax= 1.22469e+04, atom= 499Step=   94, Dmax= 5.7e-03 nm, Epot= -2.30709e+05 Fmax= 3.59893e+03, atom= 499
+Step=   95, Dmax= 6.9e-03 nm, Epot= -2.30727e+05 Fmax= 7.09572e+03, atom= 499
+Step=   96, Dmax= 8.3e-03 nm, Epot= -2.30759e+05 Fmax= 5.41385e+03, atom= 499
+Step=   97, Dmax= 9.9e-03 nm, Epot= -2.30760e+05 Fmax= 9.89398e+03, atom= 499
+Step=   98, Dmax= 1.2e-02 nm, Epot= -2.30797e+05 Fmax= 8.15571e+03, atom= 499
+Step=   99, Dmax= 1.4e-02 nm, Epot= -2.30768e+05 Fmax= 1.37888e+04, atom= 499Step=  100, Dmax= 7.2e-03 nm, Epot= -2.30844e+05 Fmax= 2.82446e+03, atom= 499
+Step=  101, Dmax= 8.6e-03 nm, Epot= -2.30852e+05 Fmax= 9.97793e+03, atom= 499
+Step=  102, Dmax= 1.0e-02 nm, Epot= -2.30905e+05 Fmax= 5.81705e+03, atom= 499
+Step=  103, Dmax= 1.2e-02 nm, Epot= -2.30875e+05 Fmax= 1.28225e+04, atom= 499Step=  104, Dmax= 6.2e-03 nm, Epot= -2.30934e+05 Fmax= 3.50649e+03, atom= 499
+Step=  105, Dmax= 7.4e-03 nm, Epot= -2.30946e+05 Fmax= 7.98160e+03, atom= 499
+Step=  106, Dmax= 8.9e-03 nm, Epot= -2.30982e+05 Fmax= 5.48398e+03, atom= 499
+Step=  107, Dmax= 1.1e-02 nm, Epot= -2.30971e+05 Fmax= 1.09574e+04, atom= 499Step=  108, Dmax= 5.3e-03 nm, Epot= -2.31011e+05 Fmax= 2.74033e+03, atom= 499
+Step=  109, Dmax= 6.4e-03 nm, Epot= -2.31031e+05 Fmax= 6.82357e+03, atom= 499
+Step=  110, Dmax= 7.7e-03 nm, Epot= -2.31062e+05 Fmax= 4.99658e+03, atom= 499
+Step=  111, Dmax= 9.2e-03 nm, Epot= -2.31065e+05 Fmax= 8.90796e+03, atom= 499
+Step=  112, Dmax= 1.1e-02 nm, Epot= -2.31094e+05 Fmax= 8.07220e+03, atom= 499
+Step=  113, Dmax= 1.3e-02 nm, Epot= -2.31080e+05 Fmax= 1.20241e+04, atom= 499Step=  114, Dmax= 6.6e-03 nm, Epot= -2.31138e+05 Fmax= 1.98408e+03, atom= 499
+Step=  115, Dmax= 8.0e-03 nm, Epot= -2.31152e+05 Fmax= 1.04878e+04, atom= 499
+Step=  116, Dmax= 9.6e-03 nm, Epot= -2.31213e+05 Fmax= 4.02194e+03, atom= 499
+Step=  117, Dmax= 1.1e-02 nm, Epot= -2.31173e+05 Fmax= 1.37036e+04, atom= 499Step=  118, Dmax= 5.7e-03 nm, Epot= -2.31233e+05 Fmax= 4.84317e+03, atom= 499
+Step=  119, Dmax= 6.9e-03 nm, Epot= -2.31252e+05 Fmax= 5.54189e+03, atom= 499
+Step=  120, Dmax= 8.3e-03 nm, Epot= -2.31266e+05 Fmax= 7.17815e+03, atom= 499
+Step=  121, Dmax= 9.9e-03 nm, Epot= -2.31282e+05 Fmax= 7.82528e+03, atom= 499
+Step=  122, Dmax= 1.2e-02 nm, Epot= -2.31283e+05 Fmax= 1.04322e+04, atom= 499
+Step=  123, Dmax= 1.4e-02 nm, Epot= -2.31294e+05 Fmax= 1.12044e+04, atom= 499
+Step=  124, Dmax= 1.7e-02 nm, Epot= -2.31269e+05 Fmax= 1.50031e+04, atom= 499Step=  125, Dmax= 8.6e-03 nm, Epot= -2.31369e+05 Fmax= 1.91650e+03, atom= 499
+Step=  126, Dmax= 1.0e-02 nm, Epot= -2.31363e+05 Fmax= 1.33119e+04, atom= 499Step=  127, Dmax= 5.1e-03 nm, Epot= -2.31395e+05 Fmax= 5.68966e+03, atom= 499
+Step=  128, Dmax= 6.2e-03 nm, Epot= -2.31422e+05 Fmax= 3.80479e+03, atom= 499
+Step=  129, Dmax= 7.4e-03 nm, Epot= -2.31431e+05 Fmax= 7.32814e+03, atom= 499
+Step=  130, Dmax= 8.9e-03 nm, Epot= -2.31457e+05 Fmax= 6.31193e+03, atom= 499
+Step=  131, Dmax= 1.1e-02 nm, Epot= -2.31453e+05 Fmax= 9.80358e+03, atom= 499Step=  132, Dmax= 5.3e-03 nm, Epot= -2.31488e+05 Fmax= 1.75021e+03, atom= 499
+Step=  133, Dmax= 6.4e-03 nm, Epot= -2.31510e+05 Fmax= 8.27315e+03, atom= 499
+Step=  134, Dmax= 7.7e-03 nm, Epot= -2.31552e+05 Fmax= 3.36162e+03, atom= 499
+Step=  135, Dmax= 9.2e-03 nm, Epot= -2.31538e+05 Fmax= 1.08857e+04, atom= 499Step=  136, Dmax= 4.6e-03 nm, Epot= -2.31570e+05 Fmax= 3.76351e+03, atom= 499
+Step=  137, Dmax= 5.5e-03 nm, Epot= -2.31588e+05 Fmax= 4.55381e+03, atom= 499
+Step=  138, Dmax= 6.6e-03 nm, Epot= -2.31604e+05 Fmax= 5.66815e+03, atom= 499
+Step=  139, Dmax= 8.0e-03 nm, Epot= -2.31619e+05 Fmax= 6.35974e+03, atom= 499
+Step=  140, Dmax= 9.6e-03 nm, Epot= -2.31627e+05 Fmax= 8.31062e+03, atom= 499
+Step=  141, Dmax= 1.1e-02 nm, Epot= -2.31639e+05 Fmax= 9.04837e+03, atom= 499
+Step=  142, Dmax= 1.4e-02 nm, Epot= -2.31630e+05 Fmax= 1.20142e+04, atom= 499Step=  143, Dmax= 6.9e-03 nm, Epot= -2.31690e+05 Fmax= 1.49312e+03, atom= 499
+Step=  144, Dmax= 8.3e-03 nm, Epot= -2.31711e+05 Fmax= 1.06604e+04, atom= 499
+Step=  145, Dmax= 9.9e-03 nm, Epot= -2.31771e+05 Fmax= 4.51735e+03, atom= 499
+Step=  146, Dmax= 1.2e-02 nm, Epot= -2.31726e+05 Fmax= 1.33996e+04, atom= 499Step=  147, Dmax= 5.9e-03 nm, Epot= -2.31789e+05 Fmax= 4.44456e+03, atom= 499
+Step=  148, Dmax= 7.1e-03 nm, Epot= -2.31800e+05 Fmax= 6.54290e+03, atom= 499
+Step=  149, Dmax= 8.6e-03 nm, Epot= -2.31818e+05 Fmax= 6.40409e+03, atom= 499
+Step=  150, Dmax= 1.0e-02 nm, Epot= -2.31817e+05 Fmax= 9.35961e+03, atom= 499Step=  151, Dmax= 5.1e-03 nm, Epot= -2.31849e+05 Fmax= 1.48260e+03, atom= 499
+Step=  152, Dmax= 6.2e-03 nm, Epot= -2.31876e+05 Fmax= 7.60460e+03, atom= 499
+Step=  153, Dmax= 7.4e-03 nm, Epot= -2.31912e+05 Fmax= 3.74050e+03, atom= 499
+Step=  154, Dmax= 8.9e-03 nm, Epot= -2.31903e+05 Fmax= 9.61378e+03, atom= 499Step=  155, Dmax= 4.4e-03 nm, Epot= -2.31930e+05 Fmax= 2.93849e+03, atom= 499
+Step=  156, Dmax= 5.3e-03 nm, Epot= -2.31944e+05 Fmax= 5.30406e+03, atom= 499
+Step=  157, Dmax= 6.4e-03 nm, Epot= -2.31964e+05 Fmax= 4.34977e+03, atom= 499
+Step=  158, Dmax= 7.7e-03 nm, Epot= -2.31969e+05 Fmax= 7.45800e+03, atom= 499
+Step=  159, Dmax= 9.2e-03 nm, Epot= -2.31991e+05 Fmax= 6.47405e+03, atom= 499
+Step=  160, Dmax= 1.1e-02 nm, Epot= -2.31980e+05 Fmax= 1.04637e+04, atom= 499Step=  161, Dmax= 5.5e-03 nm, Epot= -2.32021e+05 Fmax= 1.99954e+03, atom= 499
+Step=  162, Dmax= 6.6e-03 nm, Epot= -2.32034e+05 Fmax= 7.86373e+03, atom= 499
+Step=  163, Dmax= 7.9e-03 nm, Epot= -2.32069e+05 Fmax= 4.32504e+03, atom= 499
+Step=  164, Dmax= 9.5e-03 nm, Epot= -2.32055e+05 Fmax= 1.00572e+04, atom= 499Step=  165, Dmax= 4.8e-03 nm, Epot= -2.32088e+05 Fmax= 2.86813e+03, atom= 499
+Step=  166, Dmax= 5.7e-03 nm, Epot= -2.32100e+05 Fmax= 5.99047e+03, atom= 499
+Step=  167, Dmax= 6.9e-03 nm, Epot= -2.32122e+05 Fmax= 4.39879e+03, atom= 499
+Step=  168, Dmax= 8.2e-03 nm, Epot= -2.32121e+05 Fmax= 8.28769e+03, atom= 499Step=  169, Dmax= 4.1e-03 nm, Epot= -2.32142e+05 Fmax= 1.94651e+03, atom= 499
+Step=  170, Dmax= 4.9e-03 nm, Epot= -2.32160e+05 Fmax= 5.41741e+03, atom= 499
+Step=  171, Dmax= 5.9e-03 nm, Epot= -2.32182e+05 Fmax= 3.70340e+03, atom= 499
+Step=  172, Dmax= 7.1e-03 nm, Epot= -2.32187e+05 Fmax= 7.01924e+03, atom= 499
+Step=  173, Dmax= 8.5e-03 nm, Epot= -2.32209e+05 Fmax= 6.08631e+03, atom= 499
+Step=  174, Dmax= 1.0e-02 nm, Epot= -2.32202e+05 Fmax= 9.42112e+03, atom= 499Step=  175, Dmax= 5.1e-03 nm, Epot= -2.32236e+05 Fmax= 1.67175e+03, atom= 499
+Step=  176, Dmax= 6.2e-03 nm, Epot= -2.32251e+05 Fmax= 7.94120e+03, atom= 499
+Step=  177, Dmax= 7.4e-03 nm, Epot= -2.32288e+05 Fmax= 3.25042e+03, atom= 499
+Step=  178, Dmax= 8.9e-03 nm, Epot= -2.32271e+05 Fmax= 1.04281e+04, atom= 499Step=  179, Dmax= 4.4e-03 nm, Epot= -2.32303e+05 Fmax= 3.59028e+03, atom= 499
+Step=  180, Dmax= 5.3e-03 nm, Epot= -2.32317e+05 Fmax= 4.41460e+03, atom= 499
+Step=  181, Dmax= 6.4e-03 nm, Epot= -2.32330e+05 Fmax= 5.40252e+03, atom= 499
+Step=  182, Dmax= 7.7e-03 nm, Epot= -2.32342e+05 Fmax= 6.16897e+03, atom= 499
+Step=  183, Dmax= 9.2e-03 nm, Epot= -2.32347e+05 Fmax= 7.92528e+03, atom= 499
+Step=  184, Dmax= 1.1e-02 nm, Epot= -2.32356e+05 Fmax= 8.77101e+03, atom= 499
+Step=  185, Dmax= 1.3e-02 nm, Epot= -2.32346e+05 Fmax= 1.14697e+04, atom= 499Step=  186, Dmax= 6.6e-03 nm, Epot= -2.32403e+05 Fmax= 1.35897e+03, atom= 499
+Step=  187, Dmax= 7.9e-03 nm, Epot= -2.32417e+05 Fmax= 1.03366e+04, atom= 499
+Step=  188, Dmax= 9.5e-03 nm, Epot= -2.32473e+05 Fmax= 4.24964e+03, atom= 499
+Step=  189, Dmax= 1.1e-02 nm, Epot= -2.32427e+05 Fmax= 1.29858e+04, atom= 499Step=  190, Dmax= 5.7e-03 nm, Epot= -2.32487e+05 Fmax= 4.37091e+03, atom= 499
+Step=  191, Dmax= 6.9e-03 nm, Epot= -2.32496e+05 Fmax= 6.18155e+03, atom= 499
+Step=  192, Dmax= 8.2e-03 nm, Epot= -2.32510e+05 Fmax= 6.27018e+03, atom= 499
+Step=  193, Dmax= 9.9e-03 nm, Epot= -2.32508e+05 Fmax= 8.87468e+03, atom= 499Step=  194, Dmax= 4.9e-03 nm, Epot= -2.32538e+05 Fmax= 1.30716e+03, atom= 499
+Step=  195, Dmax= 5.9e-03 nm, Epot= -2.32562e+05 Fmax= 7.42404e+03, atom= 499
+Step=  196, Dmax= 7.1e-03 nm, Epot= -2.32595e+05 Fmax= 3.47746e+03, atom= 499
+Step=  197, Dmax= 8.5e-03 nm, Epot= -2.32583e+05 Fmax= 9.36574e+03, atom= 499Step=  198, Dmax= 4.3e-03 nm, Epot= -2.32610e+05 Fmax= 2.94578e+03, atom= 499
+Step=  199, Dmax= 5.1e-03 nm, Epot= -2.32621e+05 Fmax= 4.96574e+03, atom= 499
+Step=  200, Dmax= 6.1e-03 nm, Epot= -2.32637e+05 Fmax= 4.31738e+03, atom= 499
+Step=  201, Dmax= 7.4e-03 nm, Epot= -2.32641e+05 Fmax= 7.02321e+03, atom= 499
+Step=  202, Dmax= 8.8e-03 nm, Epot= -2.32659e+05 Fmax= 6.37283e+03, atom= 499
+Step=  203, Dmax= 1.1e-02 nm, Epot= -2.32648e+05 Fmax= 9.90091e+03, atom= 499Step=  204, Dmax= 5.3e-03 nm, Epot= -2.32687e+05 Fmax= 1.76845e+03, atom= 499
+Step=  205, Dmax= 6.4e-03 nm, Epot= -2.32697e+05 Fmax= 7.70733e+03, atom= 499
+Step=  206, Dmax= 7.6e-03 nm, Epot= -2.32731e+05 Fmax= 4.00565e+03, atom= 499
+Step=  207, Dmax= 9.2e-03 nm, Epot= -2.32714e+05 Fmax= 9.82303e+03, atom= 499Step=  208, Dmax= 4.6e-03 nm, Epot= -2.32746e+05 Fmax= 2.91017e+03, atom= 499
+Step=  209, Dmax= 5.5e-03 nm, Epot= -2.32755e+05 Fmax= 5.59240e+03, atom= 499
+Step=  210, Dmax= 6.6e-03 nm, Epot= -2.32773e+05 Fmax= 4.39593e+03, atom= 499
+Step=  211, Dmax= 7.9e-03 nm, Epot= -2.32772e+05 Fmax= 7.78901e+03, atom= 499Step=  212, Dmax= 4.0e-03 nm, Epot= -2.32792e+05 Fmax= 1.69914e+03, atom= 499
+Step=  213, Dmax= 4.8e-03 nm, Epot= -2.32808e+05 Fmax= 5.37175e+03, atom= 499
+Step=  214, Dmax= 5.7e-03 nm, Epot= -2.32828e+05 Fmax= 3.39073e+03, atom= 499
+Step=  215, Dmax= 6.8e-03 nm, Epot= -2.32831e+05 Fmax= 6.91666e+03, atom= 499
+Step=  216, Dmax= 8.2e-03 nm, Epot= -2.32851e+05 Fmax= 5.67642e+03, atom= 499
+Step=  217, Dmax= 9.9e-03 nm, Epot= -2.32842e+05 Fmax= 9.23259e+03, atom= 499Step=  218, Dmax= 4.9e-03 nm, Epot= -2.32875e+05 Fmax= 1.78175e+03, atom= 499
+Step=  219, Dmax= 5.9e-03 nm, Epot= -2.32884e+05 Fmax= 7.42881e+03, atom= 499
+Step=  220, Dmax= 7.1e-03 nm, Epot= -2.32915e+05 Fmax= 3.32892e+03, atom= 499
+Step=  221, Dmax= 8.5e-03 nm, Epot= -2.32899e+05 Fmax= 9.80268e+03, atom= 499Step=  222, Dmax= 4.3e-03 nm, Epot= -2.32929e+05 Fmax= 3.23837e+03, atom= 499
+Step=  223, Dmax= 5.1e-03 nm, Epot= -2.32940e+05 Fmax= 4.45375e+03, atom= 499
+Step=  224, Dmax= 6.1e-03 nm, Epot= -2.32952e+05 Fmax= 4.97565e+03, atom= 499
+Step=  225, Dmax= 7.4e-03 nm, Epot= -2.32960e+05 Fmax= 6.14674e+03, atom= 499
+Step=  226, Dmax= 8.8e-03 nm, Epot= -2.32967e+05 Fmax= 7.39515e+03, atom= 499
+Step=  227, Dmax= 1.1e-02 nm, Epot= -2.32971e+05 Fmax= 8.65530e+03, atom= 499
+Step=  228, Dmax= 1.3e-02 nm, Epot= -2.32965e+05 Fmax= 1.07973e+04, atom= 499Step=  229, Dmax= 6.4e-03 nm, Epot= -2.33016e+05 Fmax= 1.08085e+03, atom= 499
+Step=  230, Dmax= 7.6e-03 nm, Epot= -2.33036e+05 Fmax= 1.00891e+04, atom= 499
+Step=  231, Dmax= 9.2e-03 nm, Epot= -2.33089e+05 Fmax= 3.93230e+03, atom= 499
+Step=  232, Dmax= 1.1e-02 nm, Epot= -2.33043e+05 Fmax= 1.26346e+04, atom= 499Step=  233, Dmax= 5.5e-03 nm, Epot= -2.33101e+05 Fmax= 4.35413e+03, atom= 499
+Step=  234, Dmax= 6.6e-03 nm, Epot= -2.33109e+05 Fmax= 5.78416e+03, atom= 499
+Step=  235, Dmax= 7.9e-03 nm, Epot= -2.33120e+05 Fmax= 6.18549e+03, atom= 499
+Step=  236, Dmax= 9.5e-03 nm, Epot= -2.33119e+05 Fmax= 8.36864e+03, atom= 499Step=  237, Dmax= 4.7e-03 nm, Epot= -2.33146e+05 Fmax= 1.09613e+03, atom= 499
+Step=  238, Dmax= 5.7e-03 nm, Epot= -2.33171e+05 Fmax= 7.26142e+03, atom= 499
+Step=  239, Dmax= 6.8e-03 nm, Epot= -2.33202e+05 Fmax= 3.21531e+03, atom= 499
+Step=  240, Dmax= 8.2e-03 nm, Epot= -2.33189e+05 Fmax= 9.12810e+03, atom= 499Step=  241, Dmax= 4.1e-03 nm, Epot= -2.33215e+05 Fmax= 2.95780e+03, atom= 499
+Step=  242, Dmax= 4.9e-03 nm, Epot= -2.33224e+05 Fmax= 4.64042e+03, atom= 499
+Step=  243, Dmax= 5.9e-03 nm, Epot= -2.33238e+05 Fmax= 4.28214e+03, atom= 499
+Step=  244, Dmax= 7.1e-03 nm, Epot= -2.33242e+05 Fmax= 6.61331e+03, atom= 499
+Step=  245, Dmax= 8.5e-03 nm, Epot= -2.33256e+05 Fmax= 6.26324e+03, atom= 499
+Step=  246, Dmax= 1.0e-02 nm, Epot= -2.33247e+05 Fmax= 9.37546e+03, atom= 499Step=  247, Dmax= 5.1e-03 nm, Epot= -2.33282e+05 Fmax= 1.56052e+03, atom= 499
+Step=  248, Dmax= 6.1e-03 nm, Epot= -2.33292e+05 Fmax= 7.53174e+03, atom= 499
+Step=  249, Dmax= 7.3e-03 nm, Epot= -2.33324e+05 Fmax= 3.72529e+03, atom= 499
+Step=  250, Dmax= 8.8e-03 nm, Epot= -2.33306e+05 Fmax= 9.56477e+03, atom= 499Step=  251, Dmax= 4.4e-03 nm, Epot= -2.33337e+05 Fmax= 2.92144e+03, atom= 499
+Step=  252, Dmax= 5.3e-03 nm, Epot= -2.33345e+05 Fmax= 5.24495e+03, atom= 499
+Step=  253, Dmax= 6.3e-03 nm, Epot= -2.33360e+05 Fmax= 4.35484e+03, atom= 499
+Step=  254, Dmax= 7.6e-03 nm, Epot= -2.33360e+05 Fmax= 7.35272e+03, atom= 499Step=  255, Dmax= 3.8e-03 nm, Epot= -2.33377e+05 Fmax= 1.50115e+03, atom= 499
+Step=  256, Dmax= 4.6e-03 nm, Epot= -2.33393e+05 Fmax= 5.28224e+03, atom= 499
+Step=  257, Dmax= 5.5e-03 nm, Epot= -2.33412e+05 Fmax= 3.13808e+03, atom= 499
+Step=  258, Dmax= 6.6e-03 nm, Epot= -2.33413e+05 Fmax= 6.76594e+03, atom= 499
+Step=  259, Dmax= 7.9e-03 nm, Epot= -2.33433e+05 Fmax= 5.33677e+03, atom= 499
+Step=  260, Dmax= 9.5e-03 nm, Epot= -2.33422e+05 Fmax= 8.99277e+03, atom= 499Step=  261, Dmax= 4.7e-03 nm, Epot= -2.33453e+05 Fmax= 1.83086e+03, atom= 499
+Step=  262, Dmax= 5.7e-03 nm, Epot= -2.33459e+05 Fmax= 7.00875e+03, atom= 499
+Step=  263, Dmax= 6.8e-03 nm, Epot= -2.33487e+05 Fmax= 3.33026e+03, atom= 499
+Step=  264, Dmax= 8.2e-03 nm, Epot= -2.33472e+05 Fmax= 9.28494e+03, atom= 499Step=  265, Dmax= 4.1e-03 nm, Epot= -2.33500e+05 Fmax= 2.97874e+03, atom= 499
+Step=  266, Dmax= 4.9e-03 nm, Epot= -2.33509e+05 Fmax= 4.41133e+03, atom= 499
+Step=  267, Dmax= 5.9e-03 nm, Epot= -2.33521e+05 Fmax= 4.64945e+03, atom= 499
+Step=  268, Dmax= 7.1e-03 nm, Epot= -2.33527e+05 Fmax= 6.03899e+03, atom= 499
+Step=  269, Dmax= 8.5e-03 nm, Epot= -2.33534e+05 Fmax= 6.97536e+03, atom= 499
+Step=  270, Dmax= 1.0e-02 nm, Epot= -2.33535e+05 Fmax= 8.45095e+03, atom= 499
+Step=  271, Dmax= 1.2e-02 nm, Epot= -2.33532e+05 Fmax= 1.02460e+04, atom= 499Step=  272, Dmax= 6.1e-03 nm, Epot= -2.33577e+05 Fmax= 9.07733e+02, atom= 499
+
+writing lowest energy coordinates.
+
+Steepest Descents converged to Fmax < 1000 in 273 steps
+Potential Energy  = -2.3357741e+05
+Maximum force     =  9.0773267e+02 on atom 499
+Norm of force     =  2.5104745e+01
+
+GROMACS reminds you: "There is no reason for any individual to have a computer in his home." (Ken Olsen, head of Digital Equipment Corp.)
+
+                      :-) GROMACS - gmx grompp, 2023.3 (-:
+
+Executable:   /ext3/apps/gromacs/2023.3/openmpi/intel/bin/gmx_mpi
+Data prefix:  /ext3/apps/gromacs/2023.3/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2024fa/students/ra3194/comp-lab-class-2024/Week4-CharmmGuiSetup/Art-Est Charm Files/gromacs
+Command line:
+  gmx_mpi grompp -f step4.1_equilibration.mdp -o step4.1_equilibration.tpr -c step4.0_minimization.gro -r step3_input.gro -p topol.top -n index.ndx -maxwarn 2
+
+Generating 1-4 interactions: fudge = 0.5
+Number of degrees of freedom in T-Coupling group SOLU is 1258.00
+Number of degrees of freedom in T-Coupling group SOLV is 23517.00
+
+NOTE 1 [file step4.1_equilibration.mdp]:
+  Removing center of mass motion in the presence of position restraints
+  might cause artifacts. When you are using position restraints to
+  equilibrate a macro-molecule, the artifacts are usually negligible.
+
+
+There was 1 NOTE
+
+GROMACS reminds you: "Why Do *You* Use Constraints ?" (H.J.C. Berendsen)
+
+Setting the LD random seed to -572538979
+
+Generated 1035 of the 1035 non-bonded parameter combinations
+
+Generated 1035 of the 1035 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'PROA'
+
+turning H bonds into constraints...
+
+Excluding 1 bonded neighbours molecule type 'K+'
+
+turning H bonds into constraints...
+
+Excluding 1 bonded neighbours molecule type 'Cl-'
+
+turning H bonds into constraints...
+
+Excluding 1 bonded neighbours molecule type 'OPC'
+
+turning H bonds into constraints...
+
+Setting gen_seed to 1610587983
+
+Velocities were taken from a Maxwell distribution at 310 K
+
+Cleaning up constraints and constant bonded interactions with virtual sites
+
+The largest distance between excluded atoms is 0.404 nm between atom 230 and 238
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 310 K
+
+Calculated rlist for 1x1 atom pair-list as 0.949 nm, buffer size 0.049 nm
+
+Set rlist, assuming 4x4 atom pair-list, to 0.913 nm, buffer size 0.013 nm
+
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 44x44x44, spacing 0.116 0.116 0.116
+
+Estimate for the relative computational load of the PME mesh part: 0.24
+
+This run will generate roughly 4 Mb of data
+                      :-) GROMACS - gmx mdrun, 2023.3 (-:
+
+Executable:   /ext3/apps/gromacs/2023.3/openmpi/intel/bin/gmx_mpi
+Data prefix:  /ext3/apps/gromacs/2023.3/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2024fa/students/ra3194/comp-lab-class-2024/Week4-CharmmGuiSetup/Art-Est Charm Files/gromacs
+Command line:
+  gmx_mpi mdrun -v -deffnm step4.1_equilibration
+
+Compiled SIMD is AVX2_256, but CPU also supports AVX_512 (see log).
+Reading file step4.1_equilibration.tpr, VERSION 2023.3 (single precision)
+Changing nstlist from 20 to 50, rlist from 0.913 to 0.975
+
+Using 4 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+starting mdrun 'Title'
+125000 steps,    125.0 ps.
+step 0
+imb F  5% step 100, will finish Thu Sep 26 15:08:55 2024
+vol 0.97  imb F  4% step 200, will finish Thu Sep 26 15:08:42 2024
+vol 0.98  imb F  3% step 300, will finish Thu Sep 26 15:08:36 2024
+vol 0.98  imb F  1% step 400, will finish Thu Sep 26 15:08:31 2024
+vol 0.98  imb F  1% step 500, will finish Thu Sep 26 15:08:29 2024
+vol 0.98  imb F  1% step 600, will finish Thu Sep 26 15:08:27 2024
+vol 0.97  imb F  0% step 700, will finish Thu Sep 26 15:08:27 2024
+vol 0.97  imb F  0% step 800, will finish Thu Sep 26 15:08:25 2024
+vol 0.97  imb F  2% step 900, will finish Thu Sep 26 15:08:25 2024
+vol 0.98  imb F  1% step 1000, will finish Thu Sep 26 15:08:25 2024
+vol 0.98  imb F  1% step 1100, will finish Thu Sep 26 15:08:24 2024
+vol 0.98  imb F  1% step 1200, will finish Thu Sep 26 15:08:23 2024
+vol 0.98  imb F  1% step 1300, will finish Thu Sep 26 15:08:23 2024
+vol 0.97  imb F  1% step 1400, will finish Thu Sep 26 15:08:23 2024
+vol 0.97  imb F  1% step 1500, will finish Thu Sep 26 15:08:23 2024
+vol 0.96  imb F  1% step 1600, will finish Thu Sep 26 15:08:23 2024
+vol 0.96  imb F  0% step 1700, will finish Thu Sep 26 15:08:22 2024
+vol 0.96  imb F  0% step 1800, will finish Thu Sep 26 15:08:22 2024
+vol 0.96  imb F  1% step 1900, will finish Thu Sep 26 15:08:22 2024
+vol 0.96  imb F  1% step 2000, will finish Thu Sep 26 15:08:22 2024
+vol 0.96  imb F  1% step 2100, will finish Thu Sep 26 15:08:21 2024
+vol 0.97  imb F  1% step 2200, will finish Thu Sep 26 15:08:21 2024
+vol 0.97  imb F  0% step 2300, will finish Thu Sep 26 15:08:21 2024
+vol 0.97  imb F  0% step 2400, will finish Thu Sep 26 15:08:21 2024
+vol 0.97  imb F  1% step 2500, will finish Thu Sep 26 15:08:21 2024
+vol 0.98  imb F  2% step 2600, will finish Thu Sep 26 15:08:21 2024
+vol 0.98  imb F  1% step 2700, will finish Thu Sep 26 15:08:21 2024
+vol 0.98  imb F  1% step 2800, will finish Thu Sep 26 15:08:21 2024
+vol 0.99  imb F  1% step 2900, will finish Thu Sep 26 15:08:21 2024
+vol 0.99  imb F  0% step 3000, will finish Thu Sep 26 15:08:21 2024
+vol 0.99  imb F  1% step 3100, will finish Thu Sep 26 15:08:21 2024
+vol 0.99  imb F  2% step 3200, will finish Thu Sep 26 15:08:21 2024
+vol 0.99  imb F  1% step 3300, will finish Thu Sep 26 15:08:21 2024
+vol 0.99  imb F  1% step 3400, will finish Thu Sep 26 15:08:21 2024
+vol 0.99  imb F  0% step 3500, will finish Thu Sep 26 15:08:21 2024
+vol 0.99  imb F  1% step 3600, will finish Thu Sep 26 15:08:21 2024
+vol 0.99  imb F  1% step 3700, will finish Thu Sep 26 15:08:21 2024
+vol 0.99  imb F  1% step 3800, will finish Thu Sep 26 15:08:21 2024
+vol 0.99  imb F  0% step 3900, will finish Thu Sep 26 15:08:21 2024
+vol 1.00  imb F  1% step 4000, will finish Thu Sep 26 15:08:21 2024
+vol 0.99  imb F  1% step 4100, will finish Thu Sep 26 15:08:21 2024
+vol 0.99  imb F  1% step 4200, will finish Thu Sep 26 15:08:21 2024
+vol 0.99  imb F  1% step 4300, will finish Thu Sep 26 15:08:21 2024
+vol 0.99  imb F  2% step 4400, will finish Thu Sep 26 15:08:21 2024
+vol 0.99  imb F  1% step 4500, will finish Thu Sep 26 15:08:21 2024
+vol 0.98  imb F  1% step 4600, will finish Thu Sep 26 15:08:21 2024
+vol 0.98  imb F  1% step 4700, will finish Thu Sep 26 15:08:21 2024
+vol 0.98  imb F  1% step 4800, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 4900, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 5000, will finish Thu Sep 26 15:08:21 2024
+vol 0.98  imb F  1% step 5100, will finish Thu Sep 26 15:08:21 2024
+vol 0.99  imb F  1% step 5200, will finish Thu Sep 26 15:08:21 2024
+vol 0.99  imb F  0% step 5300, will finish Thu Sep 26 15:08:21 2024
+vol 0.99  imb F  2% step 5400, will finish Thu Sep 26 15:08:21 2024
+vol 0.99  imb F  1% step 5500, will finish Thu Sep 26 15:08:21 2024
+vol 0.99  imb F  0% step 5600, will finish Thu Sep 26 15:08:21 2024
+vol 0.99  imb F  2% step 5700, will finish Thu Sep 26 15:08:21 2024
+vol 0.99  imb F  0% step 5800, will finish Thu Sep 26 15:08:21 2024
+vol 0.98  imb F  1% step 5900, will finish Thu Sep 26 15:08:21 2024
+vol 0.98  imb F  1% step 6000, will finish Thu Sep 26 15:08:21 2024
+vol 0.98  imb F  1% step 6100, will finish Thu Sep 26 15:08:21 2024
+vol 0.97  imb F  1% step 6200, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  2% step 6300, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 6400, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 6500, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 6600, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 6700, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 6800, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 6900, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 7000, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  2% step 7100, will finish Thu Sep 26 15:08:20 2024
+vol 1.00  imb F  0% step 7200, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 7300, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 7400, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 7500, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  0% step 7600, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  0% step 7700, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 7800, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 7900, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  0% step 8000, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  0% step 8100, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 8200, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  2% step 8300, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 8400, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 8500, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 8600, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 8700, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 8800, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  0% step 8900, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 9000, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 9100, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 9200, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  0% step 9300, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 9400, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 9500, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  0% step 9600, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 9700, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 9800, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  0% step 9900, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 10000, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 10100, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 10200, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 10300, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 10400, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 10500, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 10600, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  2% step 10700, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 10800, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 10900, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 11000, will finish Thu Sep 26 15:08:20 2024
+vol 1.00  imb F  1% step 11100, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 11200, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 11300, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 11400, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  0% step 11500, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  2% step 11600, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  2% step 11700, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 11800, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  2% step 11900, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  2% step 12000, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 12100, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 12200, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 12300, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  0% step 12400, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 12500, will finish Thu Sep 26 15:08:20 2024
+vol 0.96  imb F  1% step 12600, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  2% step 12700, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 12800, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  2% step 12900, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  0% step 13000, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 13100, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  2% step 13200, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 13300, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 13400, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 13500, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 13600, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 13700, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  2% step 13800, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  2% step 13900, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 14000, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  0% step 14100, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 14200, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 14300, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 14400, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 14500, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 14600, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 14700, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 14800, will finish Thu Sep 26 15:08:20 2024
+vol 0.96  imb F  1% step 14900, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 15000, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 15100, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 15200, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 15300, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 15400, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 15500, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  2% step 15600, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 15700, will finish Thu Sep 26 15:08:20 2024
+vol 0.96  imb F  0% step 15800, will finish Thu Sep 26 15:08:20 2024
+vol 0.96  imb F  1% step 15900, will finish Thu Sep 26 15:08:20 2024
+vol 0.96  imb F  1% step 16000, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 16100, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 16200, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 16300, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 16400, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  0% step 16500, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 16600, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 16700, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  2% step 16800, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  0% step 16900, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 17000, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 17100, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 17200, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 17300, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 17400, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  2% step 17500, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 17600, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  0% step 17700, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 17800, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 17900, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 18000, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 18100, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 18200, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 18300, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 18400, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  0% step 18500, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  0% step 18600, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 18700, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  2% step 18800, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 18900, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 19000, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 19100, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 19200, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 19300, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  2% step 19400, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 19500, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 19600, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 19700, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 19800, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  0% step 19900, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  2% step 20000, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 20100, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 20200, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 20300, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 20400, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 20500, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 20600, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 20700, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 20800, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 20900, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 21000, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 21100, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 21200, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 21300, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 21400, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 21500, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 21600, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 21700, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 21800, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 21900, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 22000, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 22100, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 22200, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 22300, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 22400, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 22500, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 22600, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  3% step 22700, will finish Thu Sep 26 15:08:20 2024
+vol 0.96  imb F  0% step 22800, will finish Thu Sep 26 15:08:20 2024
+vol 0.96  imb F  1% step 22900, will finish Thu Sep 26 15:08:20 2024
+vol 0.96  imb F  1% step 23000, will finish Thu Sep 26 15:08:20 2024
+vol 0.96  imb F  1% step 23100, will finish Thu Sep 26 15:08:20 2024
+vol 0.96  imb F  1% step 23200, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 23300, will finish Thu Sep 26 15:08:20 2024
+vol 0.96  imb F  1% step 23400, will finish Thu Sep 26 15:08:20 2024
+vol 0.96  imb F  0% step 23500, will finish Thu Sep 26 15:08:20 2024
+vol 0.96  imb F  1% step 23600, will finish Thu Sep 26 15:08:20 2024
+vol 0.96  imb F  1% step 23700, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 23800, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  2% step 23900, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 24000, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 24100, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 24200, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 24300, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 24400, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 24500, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 24600, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  0% step 24700, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  2% step 24800, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 24900, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 25000, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 25100, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 25200, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 25300, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 25400, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  0% step 25500, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 25600, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  0% step 25700, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 25800, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 25900, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  0% step 26000, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 26100, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 26200, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 26300, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 26400, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  2% step 26500, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 26600, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 26700, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 26800, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 26900, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 27000, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 27100, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  0% step 27200, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  0% step 27300, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 27400, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 27500, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 27600, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 27700, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 27800, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 27900, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  2% step 28000, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 28100, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  0% step 28200, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  0% step 28300, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 28400, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  2% step 28500, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  2% step 28600, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 28700, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  2% step 28800, will finish Thu Sep 26 15:08:20 2024
+vol 0.97  imb F  1% step 28900, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 29000, will finish Thu Sep 26 15:08:20 2024
+vol 0.98  imb F  1% step 29100, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 29200, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  0% step 29300, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 29400, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  0% step 29500, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 29600, will finish Thu Sep 26 15:08:20 2024
+vol 1.00  imb F  1% step 29700, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  2% step 29800, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 29900, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 30000, will finish Thu Sep 26 15:08:20 2024
+vol 0.99  imb F  1% step 30100, will finish Thu Sep 26 15:08:20 2024
+vol 1.00  imb F  1% step 30200, remaining wall clock time:   299 s          
+vol 0.99  imb F  1% step 30300, remaining wall clock time:   299 s          
+vol 0.99  imb F  1% step 30400, remaining wall clock time:   299 s          
+vol 0.99  imb F  1% step 30500, remaining wall clock time:   298 s          
+vol 0.99  imb F  2% step 30600, remaining wall clock time:   298 s          
+vol 0.98  imb F  2% step 30700, remaining wall clock time:   298 s          
+vol 0.97  imb F  1% step 30800, remaining wall clock time:   297 s          
+vol 0.97  imb F  1% step 30900, remaining wall clock time:   297 s          
+vol 0.97  imb F  1% step 31000, remaining wall clock time:   297 s          
+vol 0.96  imb F  1% step 31100, remaining wall clock time:   296 s          
+vol 0.96  imb F  1% step 31200, remaining wall clock time:   296 s          
+vol 0.96  imb F  0% step 31300, remaining wall clock time:   296 s          
+vol 0.97  imb F  1% step 31400, remaining wall clock time:   295 s          
+vol 0.96  imb F  1% step 31500, remaining wall clock time:   295 s          
+vol 0.97  imb F  2% step 31600, remaining wall clock time:   295 s          
+vol 0.98  imb F  2% step 31700, remaining wall clock time:   295 s          
+vol 0.97  imb F  1% step 31800, remaining wall clock time:   294 s          
+vol 0.96  imb F  1% step 31900, remaining wall clock time:   294 s          
+vol 0.96  imb F  1% step 32000, remaining wall clock time:   294 s          
+vol 0.96  imb F  1% step 32100, remaining wall clock time:   293 s          
+vol 0.96  imb F  1% step 32200, remaining wall clock time:   293 s          
+vol 0.95  imb F  1% step 32300, remaining wall clock time:   293 s          
+vol 0.95  imb F  1% step 32400, remaining wall clock time:   292 s          
+vol 0.95  imb F  1% step 32500, remaining wall clock time:   292 s          
+vol 0.95  imb F  1% step 32600, remaining wall clock time:   292 s          
+vol 0.96  imb F  1% step 32700, remaining wall clock time:   291 s          
+vol 0.97  imb F  1% step 32800, remaining wall clock time:   291 s          
+vol 0.97  imb F  0% step 32900, remaining wall clock time:   291 s          
+vol 0.97  imb F  1% step 33000, remaining wall clock time:   290 s          
+vol 0.97  imb F  1% step 33100, remaining wall clock time:   290 s          
+vol 0.98  imb F  1% step 33200, remaining wall clock time:   290 s          
+vol 0.98  imb F  0% step 33300, remaining wall clock time:   289 s          
+vol 0.98  imb F  2% step 33400, remaining wall clock time:   289 s          
+vol 0.98  imb F  1% step 33500, remaining wall clock time:   289 s          
+vol 0.98  imb F  1% step 33600, remaining wall clock time:   289 s          
+vol 0.98  imb F  1% step 33700, remaining wall clock time:   288 s          
+vol 0.98  imb F  2% step 33800, remaining wall clock time:   288 s          
+vol 0.98  imb F  1% step 33900, remaining wall clock time:   288 s          
+vol 0.98  imb F  1% step 34000, remaining wall clock time:   287 s          
+vol 0.99  imb F  1% step 34100, remaining wall clock time:   287 s          
+vol 0.98  imb F  1% step 34200, remaining wall clock time:   287 s          
+vol 0.98  imb F  1% step 34300, remaining wall clock time:   286 s          
+vol 0.98  imb F  1% step 34400, remaining wall clock time:   286 s          
+vol 0.98  imb F  0% step 34500, remaining wall clock time:   286 s          
+vol 0.98  imb F  1% step 34600, remaining wall clock time:   285 s          
+vol 0.98  imb F  1% step 34700, remaining wall clock time:   285 s          
+vol 0.98  imb F  2% step 34800, remaining wall clock time:   285 s          
+vol 0.97  imb F  0% step 34900, remaining wall clock time:   284 s          
+vol 0.97  imb F  1% step 35000, remaining wall clock time:   284 s          
+vol 0.97  imb F  1% step 35100, remaining wall clock time:   284 s          
+vol 0.97  imb F  1% step 35200, remaining wall clock time:   283 s          
+vol 0.98  imb F  0% step 35300, remaining wall clock time:   283 s          
+vol 0.98  imb F  2% step 35400, remaining wall clock time:   283 s          
+vol 0.97  imb F  1% step 35500, remaining wall clock time:   282 s          
+vol 0.97  imb F  2% step 35600, remaining wall clock time:   282 s          
+vol 0.98  imb F  1% step 35700, remaining wall clock time:   282 s          
+vol 0.97  imb F  1% step 35800, remaining wall clock time:   282 s          
+vol 0.97  imb F  1% step 35900, remaining wall clock time:   281 s          
+vol 0.97  imb F  1% step 36000, remaining wall clock time:   281 s          
+vol 0.97  imb F  1% step 36100, remaining wall clock time:   281 s          
+vol 0.97  imb F  1% step 36200, remaining wall clock time:   280 s          
+vol 0.96  imb F  2% step 36300, remaining wall clock time:   280 s          
+vol 0.97  imb F  2% step 36400, remaining wall clock time:   280 s          
+vol 0.97  imb F  1% step 36500, remaining wall clock time:   279 s          
+vol 0.97  imb F  1% step 36600, remaining wall clock time:   279 s          
+vol 0.97  imb F  1% step 36700, remaining wall clock time:   279 s          
+vol 0.96  imb F  1% step 36800, remaining wall clock time:   278 s          
+vol 0.96  imb F  1% step 36900, remaining wall clock time:   278 s          
+vol 0.96  imb F  1% step 37000, remaining wall clock time:   278 s          
+vol 0.96  imb F  0% step 37100, remaining wall clock time:   277 s          
+vol 0.96  imb F  2% step 37200, remaining wall clock time:   277 s          
+vol 0.96  imb F  1% step 37300, remaining wall clock time:   277 s          
+vol 0.96  imb F  1% step 37400, remaining wall clock time:   276 s          
+vol 0.96  imb F  2% step 37500, remaining wall clock time:   276 s          
+vol 0.96  imb F  1% step 37600, remaining wall clock time:   276 s          
+vol 0.97  imb F  1% step 37700, remaining wall clock time:   276 s          
+vol 0.98  imb F  1% step 37800, remaining wall clock time:   275 s          
+vol 0.98  imb F  1% step 37900, remaining wall clock time:   275 s          
+vol 0.99  imb F  1% step 38000, remaining wall clock time:   275 s          
+vol 0.99  imb F  1% step 38100, remaining wall clock time:   274 s          
+vol 0.99  imb F  0% step 38200, remaining wall clock time:   274 s          
+vol 0.99  imb F  1% step 38300, remaining wall clock time:   274 s          
+vol 0.99  imb F  1% step 38400, remaining wall clock time:   273 s          
+vol 0.98  imb F  1% step 38500, remaining wall clock time:   273 s          
+vol 0.98  imb F  1% step 38600, remaining wall clock time:   273 s          
+vol 0.98  imb F  1% step 38700, remaining wall clock time:   272 s          
+vol 0.99  imb F  1% step 38800, remaining wall clock time:   272 s          
+vol 0.98  imb F  2% step 38900, remaining wall clock time:   272 s          
+vol 0.98  imb F  2% step 39000, remaining wall clock time:   271 s          
+vol 0.98  imb F  1% step 39100, remaining wall clock time:   271 s          
+vol 0.98  imb F  1% step 39200, remaining wall clock time:   271 s          
+vol 0.99  imb F  0% step 39300, remaining wall clock time:   270 s          
+vol 0.98  imb F  0% step 39400, remaining wall clock time:   270 s          
+vol 0.98  imb F  0% step 39500, remaining wall clock time:   270 s          
+vol 0.98  imb F  1% step 39600, remaining wall clock time:   270 s          
+vol 0.98  imb F  2% step 39700, remaining wall clock time:   269 s          
+vol 0.98  imb F  0% step 39800, remaining wall clock time:   269 s          
+vol 0.98  imb F  2% step 39900, remaining wall clock time:   269 s          
+vol 0.98  imb F  1% step 40000, remaining wall clock time:   268 s          
+vol 0.98  imb F  1% step 40100, remaining wall clock time:   268 s          
+vol 0.98  imb F  1% step 40200, remaining wall clock time:   268 s          
+vol 0.98  imb F  1% step 40300, remaining wall clock time:   267 s          
+vol 0.97  imb F  0% step 40400, remaining wall clock time:   267 s          
+vol 0.97  imb F  1% step 40500, remaining wall clock time:   267 s          
+vol 0.97  imb F  2% step 40600, remaining wall clock time:   266 s          
+vol 0.98  imb F  0% step 40700, remaining wall clock time:   266 s          
+vol 0.98  imb F  1% step 40800, remaining wall clock time:   266 s          
+vol 0.98  imb F  1% step 40900, remaining wall clock time:   265 s          
+vol 0.99  imb F  0% step 41000, remaining wall clock time:   265 s          
+vol 0.98  imb F  0% step 41100, remaining wall clock time:   265 s          
+vol 0.98  imb F  1% step 41200, remaining wall clock time:   264 s          
+vol 0.99  imb F  1% step 41300, remaining wall clock time:   264 s          
+vol 0.98  imb F  1% step 41400, remaining wall clock time:   264 s          
+vol 0.98  imb F  2% step 41500, remaining wall clock time:   264 s          
+vol 0.98  imb F  1% step 41600, remaining wall clock time:   263 s          
+vol 0.97  imb F  0% step 41700, remaining wall clock time:   263 s          
+vol 0.97  imb F  1% step 41800, remaining wall clock time:   263 s          
+vol 0.97  imb F  0% step 41900, remaining wall clock time:   262 s          
+vol 0.97  imb F  0% step 42000, remaining wall clock time:   262 s          
+vol 0.97  imb F  1% step 42100, remaining wall clock time:   262 s          
+vol 0.97  imb F  2% step 42200, remaining wall clock time:   261 s          
+vol 0.97  imb F  1% step 42300, remaining wall clock time:   261 s          
+vol 0.97  imb F  0% step 42400, remaining wall clock time:   261 s          
+vol 0.97  imb F  1% step 42500, remaining wall clock time:   260 s          
+vol 0.97  imb F  0% step 42600, remaining wall clock time:   260 s          
+vol 0.97  imb F  1% step 42700, remaining wall clock time:   260 s          
+vol 0.97  imb F  1% step 42800, remaining wall clock time:   259 s          
+vol 0.97  imb F  1% step 42900, remaining wall clock time:   259 s          
+vol 0.97  imb F  0% step 43000, remaining wall clock time:   259 s          
+vol 0.98  imb F  1% step 43100, remaining wall clock time:   258 s          
+vol 0.98  imb F  0% step 43200, remaining wall clock time:   258 s          
+vol 0.98  imb F  1% step 43300, remaining wall clock time:   258 s          
+vol 0.98  imb F  1% step 43400, remaining wall clock time:   258 s          
+vol 0.98  imb F  1% step 43500, remaining wall clock time:   257 s          
+vol 0.97  imb F  1% step 43600, remaining wall clock time:   257 s          
+vol 0.97  imb F  0% step 43700, remaining wall clock time:   257 s          
+vol 0.96  imb F  1% step 43800, remaining wall clock time:   256 s          
+vol 0.97  imb F  1% step 43900, remaining wall clock time:   256 s          
+vol 0.96  imb F  0% step 44000, remaining wall clock time:   256 s          
+vol 0.96  imb F  1% step 44100, remaining wall clock time:   255 s          
+vol 0.97  imb F  1% step 44200, remaining wall clock time:   255 s          
+vol 0.97  imb F  1% step 44300, remaining wall clock time:   255 s          
+vol 0.98  imb F  1% step 44400, remaining wall clock time:   254 s          
+vol 0.97  imb F  1% step 44500, remaining wall clock time:   254 s          
+vol 0.97  imb F  1% step 44600, remaining wall clock time:   254 s          
+vol 0.97  imb F  1% step 44700, remaining wall clock time:   253 s          
+vol 0.97  imb F  1% step 44800, remaining wall clock time:   253 s          
+vol 0.97  imb F  1% step 44900, remaining wall clock time:   253 s          
+vol 0.98  imb F  1% step 45000, remaining wall clock time:   252 s          
+vol 0.98  imb F  1% step 45100, remaining wall clock time:   252 s          
+vol 0.98  imb F  2% step 45200, remaining wall clock time:   252 s          
+vol 0.97  imb F  1% step 45300, remaining wall clock time:   251 s          
+vol 0.98  imb F  1% step 45400, remaining wall clock time:   251 s          
+vol 0.98  imb F  1% step 45500, remaining wall clock time:   251 s          
+vol 0.98  imb F  1% step 45600, remaining wall clock time:   251 s          
+vol 0.98  imb F  1% step 45700, remaining wall clock time:   250 s          
+vol 0.98  imb F  1% step 45800, remaining wall clock time:   250 s          
+vol 0.98  imb F  1% step 45900, remaining wall clock time:   250 s          
+vol 0.98  imb F  0% step 46000, remaining wall clock time:   249 s          
+vol 0.97  imb F  1% step 46100, remaining wall clock time:   249 s          
+vol 0.98  imb F  0% step 46200, remaining wall clock time:   249 s          
+vol 0.98  imb F  1% step 46300, remaining wall clock time:   248 s          
+vol 0.97  imb F  1% step 46400, remaining wall clock time:   248 s          
+vol 0.97  imb F  0% step 46500, remaining wall clock time:   248 s          
+vol 0.97  imb F  2% step 46600, remaining wall clock time:   247 s          
+vol 0.97  imb F  1% step 46700, remaining wall clock time:   247 s          
+vol 0.97  imb F  1% step 46800, remaining wall clock time:   247 s          
+vol 0.97  imb F  1% step 46900, remaining wall clock time:   246 s          
+vol 0.98  imb F  1% step 47000, remaining wall clock time:   246 s          
+vol 0.98  imb F  2% step 47100, remaining wall clock time:   246 s          
+vol 0.98  imb F  1% step 47200, remaining wall clock time:   245 s          
+vol 0.98  imb F  1% step 47300, remaining wall clock time:   245 s          
+vol 0.99  imb F  2% step 47400, remaining wall clock time:   245 s          
+vol 0.99  imb F  2% step 47500, remaining wall clock time:   245 s          
+vol 0.98  imb F  1% step 47600, remaining wall clock time:   244 s          
+vol 0.98  imb F  2% step 47700, remaining wall clock time:   244 s          
+vol 0.99  imb F  1% step 47800, remaining wall clock time:   244 s          
+vol 0.99  imb F  1% step 47900, remaining wall clock time:   243 s          
+vol 0.98  imb F  1% step 48000, remaining wall clock time:   243 s          
+vol 0.98  imb F  1% step 48100, remaining wall clock time:   243 s          
+vol 0.98  imb F  1% step 48200, remaining wall clock time:   242 s          
+vol 0.98  imb F  1% step 48300, remaining wall clock time:   242 s          
+vol 0.98  imb F  1% step 48400, remaining wall clock time:   242 s          
+vol 0.99  imb F  1% step 48500, remaining wall clock time:   241 s          
+vol 0.99  imb F  1% step 48600, remaining wall clock time:   241 s          
+vol 0.99  imb F  1% step 48700, remaining wall clock time:   241 s          
+vol 0.99  imb F  1% step 48800, remaining wall clock time:   240 s          
+vol 0.99  imb F  1% step 48900, remaining wall clock time:   240 s          
+vol 0.99  imb F  2% step 49000, remaining wall clock time:   240 s          
+vol 0.99  imb F  1% step 49100, remaining wall clock time:   239 s          
+vol 0.98  imb F  1% step 49200, remaining wall clock time:   239 s          
+vol 0.98  imb F  1% step 49300, remaining wall clock time:   239 s          
+vol 0.98  imb F  2% step 49400, remaining wall clock time:   239 s          
+vol 0.99  imb F  1% step 49500, remaining wall clock time:   238 s          
+vol 0.99  imb F  1% step 49600, remaining wall clock time:   238 s          
+vol 0.98  imb F  1% step 49700, remaining wall clock time:   238 s          
+vol 0.98  imb F  1% step 49800, remaining wall clock time:   237 s          
+vol 0.98  imb F  1% step 49900, remaining wall clock time:   237 s          
+vol 0.98  imb F  1% step 50000, remaining wall clock time:   237 s          
+vol 0.97  imb F  1% step 50100, remaining wall clock time:   236 s          
+vol 0.97  imb F  1% step 50200, remaining wall clock time:   236 s          
+vol 0.97  imb F  1% step 50300, remaining wall clock time:   236 s          
+vol 0.97  imb F  1% step 50400, remaining wall clock time:   235 s          
+vol 0.97  imb F  1% step 50500, remaining wall clock time:   235 s          
+vol 0.97  imb F  2% step 50600, remaining wall clock time:   235 s          
+vol 0.96  imb F  1% step 50700, remaining wall clock time:   234 s          
+vol 0.96  imb F  1% step 50800, remaining wall clock time:   234 s          
+vol 0.96  imb F  1% step 50900, remaining wall clock time:   234 s          
+vol 0.96  imb F  0% step 51000, remaining wall clock time:   233 s          
+vol 0.96  imb F  1% step 51100, remaining wall clock time:   233 s          
+vol 0.97  imb F  2% step 51200, remaining wall clock time:   233 s          
+vol 0.97  imb F  1% step 51300, remaining wall clock time:   233 s          
+vol 0.97  imb F  0% step 51400, remaining wall clock time:   232 s          
+vol 0.97  imb F  0% step 51500, remaining wall clock time:   232 s          
+vol 0.97  imb F  1% step 51600, remaining wall clock time:   232 s          
+vol 0.97  imb F  1% step 51700, remaining wall clock time:   231 s          
+vol 0.97  imb F  1% step 51800, remaining wall clock time:   231 s          
+vol 0.97  imb F  1% step 51900, remaining wall clock time:   231 s          
+vol 0.97  imb F  1% step 52000, remaining wall clock time:   230 s          
+vol 0.97  imb F  1% step 52100, remaining wall clock time:   230 s          
+vol 0.97  imb F  2% step 52200, remaining wall clock time:   230 s          
+vol 0.96  imb F  1% step 52300, remaining wall clock time:   229 s          
+vol 0.96  imb F  0% step 52400, remaining wall clock time:   229 s          
+vol 0.95  imb F  1% step 52500, remaining wall clock time:   229 s          
+vol 0.96  imb F  0% step 52600, remaining wall clock time:   228 s          
+vol 0.96  imb F  1% step 52700, remaining wall clock time:   228 s          
+vol 0.96  imb F  1% step 52800, remaining wall clock time:   228 s          
+vol 0.96  imb F  1% step 52900, remaining wall clock time:   227 s          
+vol 0.96  imb F  1% step 53000, remaining wall clock time:   227 s          
+vol 0.97  imb F  0% step 53100, remaining wall clock time:   227 s          
+vol 0.97  imb F  0% step 53200, remaining wall clock time:   227 s          
+vol 0.97  imb F  1% step 53300, remaining wall clock time:   226 s          
+vol 0.97  imb F  1% step 53400, remaining wall clock time:   226 s          
+vol 0.96  imb F  1% step 53500, remaining wall clock time:   226 s          
+vol 0.96  imb F  0% step 53600, remaining wall clock time:   225 s          
+vol 0.96  imb F  0% step 53700, remaining wall clock time:   225 s          
+vol 0.96  imb F  1% step 53800, remaining wall clock time:   225 s          
+vol 0.96  imb F  1% step 53900, remaining wall clock time:   224 s          
+vol 0.96  imb F  1% step 54000, remaining wall clock time:   224 s          
+vol 0.96  imb F  1% step 54100, remaining wall clock time:   224 s          
+vol 0.96  imb F  2% step 54200, remaining wall clock time:   223 s          
+vol 0.97  imb F  0% step 54300, remaining wall clock time:   223 s          
+vol 0.97  imb F  1% step 54400, remaining wall clock time:   223 s          
+vol 0.97  imb F  1% step 54500, remaining wall clock time:   222 s          
+vol 0.97  imb F  0% step 54600, remaining wall clock time:   222 s          
+vol 0.97  imb F  1% step 54700, remaining wall clock time:   222 s          
+vol 0.97  imb F  1% step 54800, remaining wall clock time:   221 s          
+vol 0.98  imb F  0% step 54900, remaining wall clock time:   221 s          
+vol 0.98  imb F  1% step 55000, remaining wall clock time:   221 s          
+vol 0.98  imb F  1% step 55100, remaining wall clock time:   220 s          
+vol 0.98  imb F  1% step 55200, remaining wall clock time:   220 s          
+vol 0.98  imb F  1% step 55300, remaining wall clock time:   220 s          
+vol 0.97  imb F  1% step 55400, remaining wall clock time:   220 s          
+vol 0.98  imb F  1% step 55500, remaining wall clock time:   219 s          
+vol 0.98  imb F  2% step 55600, remaining wall clock time:   219 s          
+vol 0.98  imb F  0% step 55700, remaining wall clock time:   219 s          
+vol 0.98  imb F  0% step 55800, remaining wall clock time:   218 s          
+vol 0.98  imb F  1% step 55900, remaining wall clock time:   218 s          
+vol 0.98  imb F  1% step 56000, remaining wall clock time:   218 s          
+vol 0.98  imb F  0% step 56100, remaining wall clock time:   217 s          
+vol 0.98  imb F  1% step 56200, remaining wall clock time:   217 s          
+vol 0.98  imb F  0% step 56300, remaining wall clock time:   217 s          
+vol 0.98  imb F  2% step 56400, remaining wall clock time:   216 s          
+vol 0.98  imb F  2% step 56500, remaining wall clock time:   216 s          
+vol 0.97  imb F  1% step 56600, remaining wall clock time:   216 s          
+vol 0.97  imb F  0% step 56700, remaining wall clock time:   215 s          
+vol 0.97  imb F  1% step 56800, remaining wall clock time:   215 s          
+vol 0.97  imb F  1% step 56900, remaining wall clock time:   215 s          
+vol 0.97  imb F  1% step 57000, remaining wall clock time:   214 s          
+vol 0.96  imb F  1% step 57100, remaining wall clock time:   214 s          
+vol 0.97  imb F  1% step 57200, remaining wall clock time:   214 s          
+vol 0.97  imb F  1% step 57300, remaining wall clock time:   214 s          
+vol 0.96  imb F  2% step 57400, remaining wall clock time:   213 s          
+vol 0.96  imb F  1% step 57500, remaining wall clock time:   213 s          
+vol 0.97  imb F  1% step 57600, remaining wall clock time:   213 s          
+vol 0.98  imb F  0% step 57700, remaining wall clock time:   212 s          
+vol 0.98  imb F  1% step 57800, remaining wall clock time:   212 s          
+vol 0.97  imb F  1% step 57900, remaining wall clock time:   212 s          
+vol 0.97  imb F  1% step 58000, remaining wall clock time:   211 s          
+vol 0.97  imb F  1% step 58100, remaining wall clock time:   211 s          
+vol 0.97  imb F  0% step 58200, remaining wall clock time:   211 s          
+vol 0.97  imb F  0% step 58300, remaining wall clock time:   210 s          
+vol 0.98  imb F  1% step 58400, remaining wall clock time:   210 s          
+vol 0.97  imb F  2% step 58500, remaining wall clock time:   210 s          
+vol 0.97  imb F  1% step 58600, remaining wall clock time:   209 s          
+vol 0.97  imb F  1% step 58700, remaining wall clock time:   209 s          
+vol 0.97  imb F  1% step 58800, remaining wall clock time:   209 s          
+vol 0.97  imb F  0% step 58900, remaining wall clock time:   208 s          
+vol 0.97  imb F  1% step 59000, remaining wall clock time:   208 s          
+vol 0.97  imb F  0% step 59100, remaining wall clock time:   208 s          
+vol 0.97  imb F  1% step 59200, remaining wall clock time:   208 s          
+vol 0.97  imb F  0% step 59300, remaining wall clock time:   207 s          
+vol 0.97  imb F  0% step 59400, remaining wall clock time:   207 s          
+vol 0.97  imb F  2% step 59500, remaining wall clock time:   207 s          
+vol 0.96  imb F  0% step 59600, remaining wall clock time:   206 s          
+vol 0.96  imb F  1% step 59700, remaining wall clock time:   206 s          
+vol 0.96  imb F  2% step 59800, remaining wall clock time:   206 s          
+vol 0.97  imb F  0% step 59900, remaining wall clock time:   205 s          
+vol 0.97  imb F  1% step 60000, remaining wall clock time:   205 s          
+vol 0.97  imb F  0% step 60100, remaining wall clock time:   205 s          
+vol 0.97  imb F  2% step 60200, remaining wall clock time:   204 s          
+vol 0.97  imb F  1% step 60300, remaining wall clock time:   204 s          
+vol 0.98  imb F  1% step 60400, remaining wall clock time:   204 s          
+vol 0.98  imb F  1% step 60500, remaining wall clock time:   203 s          
+vol 0.98  imb F  1% step 60600, remaining wall clock time:   203 s          
+vol 0.98  imb F  1% step 60700, remaining wall clock time:   203 s          
+vol 0.98  imb F  1% step 60800, remaining wall clock time:   202 s          
+vol 0.97  imb F  2% step 60900, remaining wall clock time:   202 s          
+vol 0.97  imb F  1% step 61000, remaining wall clock time:   202 s          
+vol 0.98  imb F  1% step 61100, remaining wall clock time:   202 s          
+vol 0.97  imb F  1% step 61200, remaining wall clock time:   201 s          
+vol 0.97  imb F  1% step 61300, remaining wall clock time:   201 s          
+vol 0.96  imb F  2% step 61400, remaining wall clock time:   201 s          
+vol 0.96  imb F  0% step 61500, remaining wall clock time:   200 s          
+vol 0.96  imb F  2% step 61600, remaining wall clock time:   200 s          
+vol 0.97  imb F  0% step 61700, remaining wall clock time:   200 s          
+vol 0.97  imb F  1% step 61800, remaining wall clock time:   199 s          
+vol 0.97  imb F  1% step 61900, remaining wall clock time:   199 s          
+vol 0.97  imb F  1% step 62000, remaining wall clock time:   199 s          
+vol 0.96  imb F  0% step 62100, remaining wall clock time:   198 s          
+vol 0.96  imb F  1% step 62200, remaining wall clock time:   198 s          
+vol 0.96  imb F  0% step 62300, remaining wall clock time:   198 s          
+vol 0.96  imb F  2% step 62400, remaining wall clock time:   197 s          
+vol 0.96  imb F  1% step 62500, remaining wall clock time:   197 s          
+vol 0.97  imb F  1% step 62600, remaining wall clock time:   197 s          
+vol 0.96  imb F  0% step 62700, remaining wall clock time:   196 s          
+vol 0.96  imb F  1% step 62800, remaining wall clock time:   196 s          
+vol 0.96  imb F  0% step 62900, remaining wall clock time:   196 s          
+vol 0.96  imb F  1% step 63000, remaining wall clock time:   196 s          
+vol 0.95  imb F  1% step 63100, remaining wall clock time:   195 s          
+vol 0.96  imb F  2% step 63200, remaining wall clock time:   195 s          
+vol 0.96  imb F  2% step 63300, remaining wall clock time:   195 s          
+vol 0.97  imb F  1% step 63400, remaining wall clock time:   194 s          
+vol 0.98  imb F  1% step 63500, remaining wall clock time:   194 s          
+vol 0.98  imb F  1% step 63600, remaining wall clock time:   194 s          
+vol 0.98  imb F  1% step 63700, remaining wall clock time:   193 s          
+vol 0.98  imb F  1% step 63800, remaining wall clock time:   193 s          
+vol 0.98  imb F  1% step 63900, remaining wall clock time:   193 s          
+vol 0.98  imb F  1% step 64000, remaining wall clock time:   192 s          
+vol 0.98  imb F  1% step 64100, remaining wall clock time:   192 s          
+vol 0.98  imb F  2% step 64200, remaining wall clock time:   192 s          
+vol 0.97  imb F  1% step 64300, remaining wall clock time:   191 s          
+vol 0.98  imb F  1% step 64400, remaining wall clock time:   191 s          
+vol 0.98  imb F  1% step 64500, remaining wall clock time:   191 s          
+vol 0.97  imb F  1% step 64600, remaining wall clock time:   190 s          
+vol 0.97  imb F  1% step 64700, remaining wall clock time:   190 s          
+vol 0.97  imb F  1% step 64800, remaining wall clock time:   190 s          
+vol 0.97  imb F  1% step 64900, remaining wall clock time:   190 s          
+vol 0.97  imb F  1% step 65000, remaining wall clock time:   189 s          
+vol 0.97  imb F  1% step 65100, remaining wall clock time:   189 s          
+vol 0.98  imb F  2% step 65200, remaining wall clock time:   189 s          
+vol 0.98  imb F  1% step 65300, remaining wall clock time:   188 s          
+vol 0.99  imb F  1% step 65400, remaining wall clock time:   188 s          
+vol 0.99  imb F  1% step 65500, remaining wall clock time:   188 s          
+vol 0.99  imb F  2% step 65600, remaining wall clock time:   187 s          
+vol 0.99  imb F  2% step 65700, remaining wall clock time:   187 s          
+vol 0.98  imb F  2% step 65800, remaining wall clock time:   187 s          
+vol 0.98  imb F  1% step 65900, remaining wall clock time:   186 s          
+vol 0.98  imb F  1% step 66000, remaining wall clock time:   186 s          
+vol 0.99  imb F  1% step 66100, remaining wall clock time:   186 s          
+vol 0.99  imb F  1% step 66200, remaining wall clock time:   185 s          
+vol 0.99  imb F  1% step 66300, remaining wall clock time:   185 s          
+vol 0.99  imb F  0% step 66400, remaining wall clock time:   185 s          
+vol 0.99  imb F  1% step 66500, remaining wall clock time:   184 s          
+vol 0.99  imb F  1% step 66600, remaining wall clock time:   184 s          
+vol 0.99  imb F  1% step 66700, remaining wall clock time:   184 s          
+vol 0.99  imb F  1% step 66800, remaining wall clock time:   184 s          
+vol 0.99  imb F  1% step 66900, remaining wall clock time:   183 s          
+vol 0.99  imb F  1% step 67000, remaining wall clock time:   183 s          
+vol 0.99  imb F  0% step 67100, remaining wall clock time:   183 s          
+vol 0.99  imb F  1% step 67200, remaining wall clock time:   182 s          
+vol 0.99  imb F  1% step 67300, remaining wall clock time:   182 s          
+vol 0.98  imb F  0% step 67400, remaining wall clock time:   182 s          
+vol 0.99  imb F  1% step 67500, remaining wall clock time:   181 s          
+vol 0.99  imb F  1% step 67600, remaining wall clock time:   181 s          
+vol 0.98  imb F  1% step 67700, remaining wall clock time:   181 s          
+vol 0.98  imb F  0% step 67800, remaining wall clock time:   180 s          
+vol 0.98  imb F  1% step 67900, remaining wall clock time:   180 s          
+vol 0.98  imb F  1% step 68000, remaining wall clock time:   180 s          
+vol 0.98  imb F  1% step 68100, remaining wall clock time:   179 s          
+vol 0.98  imb F  1% step 68200, remaining wall clock time:   179 s          
+vol 0.98  imb F  1% step 68300, remaining wall clock time:   179 s          
+vol 0.98  imb F  2% step 68400, remaining wall clock time:   178 s          
+vol 0.99  imb F  1% step 68500, remaining wall clock time:   178 s          
+vol 0.99  imb F  2% step 68600, remaining wall clock time:   178 s          
+vol 0.98  imb F  2% step 68700, remaining wall clock time:   178 s          
+vol 0.97  imb F  1% step 68800, remaining wall clock time:   177 s          
+vol 0.96  imb F  1% step 68900, remaining wall clock time:   177 s          
+vol 0.96  imb F  1% step 69000, remaining wall clock time:   177 s          
+vol 0.97  imb F  1% step 69100, remaining wall clock time:   176 s          
+vol 0.97  imb F  2% step 69200, remaining wall clock time:   176 s          
+vol 0.97  imb F  0% step 69300, remaining wall clock time:   176 s          
+vol 0.98  imb F  0% step 69400, remaining wall clock time:   175 s          
+vol 0.98  imb F  1% step 69500, remaining wall clock time:   175 s          
+vol 0.97  imb F  2% step 69600, remaining wall clock time:   175 s          
+vol 0.97  imb F  1% step 69700, remaining wall clock time:   174 s          
+vol 0.97  imb F  1% step 69800, remaining wall clock time:   174 s          
+vol 0.97  imb F  1% step 69900, remaining wall clock time:   174 s          
+vol 0.97  imb F  2% step 70000, remaining wall clock time:   173 s          
+vol 0.98  imb F  0% step 70100, remaining wall clock time:   173 s          
+vol 0.98  imb F  1% step 70200, remaining wall clock time:   173 s          
+vol 0.98  imb F  1% step 70300, remaining wall clock time:   172 s          
+vol 0.97  imb F  0% step 70400, remaining wall clock time:   172 s          
+vol 0.97  imb F  2% step 70500, remaining wall clock time:   172 s          
+vol 0.98  imb F  1% step 70600, remaining wall clock time:   172 s          
+vol 0.97  imb F  1% step 70700, remaining wall clock time:   171 s          
+vol 0.98  imb F  0% step 70800, remaining wall clock time:   171 s          
+vol 0.97  imb F  2% step 70900, remaining wall clock time:   171 s          
+vol 0.97  imb F  0% step 71000, remaining wall clock time:   170 s          
+vol 0.96  imb F  1% step 71100, remaining wall clock time:   170 s          
+vol 0.96  imb F  1% step 71200, remaining wall clock time:   170 s          
+vol 0.96  imb F  1% step 71300, remaining wall clock time:   169 s          
+vol 0.96  imb F  0% step 71400, remaining wall clock time:   169 s          
+vol 0.96  imb F  1% step 71500, remaining wall clock time:   169 s          
+vol 0.97  imb F  1% step 71600, remaining wall clock time:   168 s          
+vol 0.98  imb F  1% step 71700, remaining wall clock time:   168 s          
+vol 0.98  imb F  1% step 71800, remaining wall clock time:   168 s          
+vol 0.98  imb F  0% step 71900, remaining wall clock time:   167 s          
+vol 0.99  imb F  1% step 72000, remaining wall clock time:   167 s          
+vol 0.99  imb F  1% step 72100, remaining wall clock time:   167 s          
+vol 0.99  imb F  1% step 72200, remaining wall clock time:   166 s          
+vol 0.99  imb F  1% step 72300, remaining wall clock time:   166 s          
+vol 0.99  imb F  2% step 72400, remaining wall clock time:   166 s          
+vol 0.98  imb F  1% step 72500, remaining wall clock time:   166 s          
+vol 0.98  imb F  1% step 72600, remaining wall clock time:   165 s          
+vol 0.98  imb F  2% step 72700, remaining wall clock time:   165 s          
+vol 0.98  imb F  1% step 72800, remaining wall clock time:   165 s          
+vol 0.98  imb F  1% step 72900, remaining wall clock time:   164 s          
+vol 0.98  imb F  1% step 73000, remaining wall clock time:   164 s          
+vol 0.97  imb F  0% step 73100, remaining wall clock time:   164 s          
+vol 0.97  imb F  1% step 73200, remaining wall clock time:   163 s          
+vol 0.97  imb F  1% step 73300, remaining wall clock time:   163 s          
+vol 0.97  imb F  1% step 73400, remaining wall clock time:   163 s          
+vol 0.97  imb F  1% step 73500, remaining wall clock time:   162 s          
+vol 0.97  imb F  1% step 73600, remaining wall clock time:   162 s          
+vol 0.97  imb F  1% step 73700, remaining wall clock time:   162 s          
+vol 0.98  imb F  1% step 73800, remaining wall clock time:   161 s          
+vol 0.98  imb F  1% step 73900, remaining wall clock time:   161 s          
+vol 0.98  imb F  1% step 74000, remaining wall clock time:   161 s          
+vol 0.98  imb F  1% step 74100, remaining wall clock time:   160 s          
+vol 0.98  imb F  1% step 74200, remaining wall clock time:   160 s          
+vol 0.98  imb F  0% step 74300, remaining wall clock time:   160 s          
+vol 0.98  imb F  1% step 74400, remaining wall clock time:   160 s          
+vol 0.99  imb F  1% step 74500, remaining wall clock time:   159 s          
+vol 0.99  imb F  0% step 74600, remaining wall clock time:   159 s          
+vol 0.99  imb F  1% step 74700, remaining wall clock time:   159 s          
+vol 0.99  imb F  1% step 74800, remaining wall clock time:   158 s          
+vol 0.99  imb F  0% step 74900, remaining wall clock time:   158 s          
+vol 0.98  imb F  0% step 75000, remaining wall clock time:   158 s          
+vol 0.99  imb F  2% step 75100, remaining wall clock time:   157 s          
+vol 0.98  imb F  0% step 75200, remaining wall clock time:   157 s          
+vol 0.98  imb F  1% step 75300, remaining wall clock time:   157 s          
+vol 0.98  imb F  1% step 75400, remaining wall clock time:   156 s          
+vol 0.99  imb F  1% step 75500, remaining wall clock time:   156 s          
+vol 0.99  imb F  1% step 75600, remaining wall clock time:   156 s          
+vol 0.99  imb F  1% step 75700, remaining wall clock time:   155 s          
+vol 0.99  imb F  0% step 75800, remaining wall clock time:   155 s          
+vol 0.99  imb F  2% step 75900, remaining wall clock time:   155 s          
+vol 0.99  imb F  1% step 76000, remaining wall clock time:   154 s          
+vol 0.99  imb F  0% step 76100, remaining wall clock time:   154 s          
+vol 0.99  imb F  1% step 76200, remaining wall clock time:   154 s          
+vol 0.99  imb F  1% step 76300, remaining wall clock time:   154 s          
+vol 0.99  imb F  0% step 76400, remaining wall clock time:   153 s          
+vol 0.99  imb F  1% step 76500, remaining wall clock time:   153 s          
+vol 0.99  imb F  1% step 76600, remaining wall clock time:   153 s          
+vol 0.99  imb F  1% step 76700, remaining wall clock time:   152 s          
+vol 1.00  imb F  1% step 76800, remaining wall clock time:   152 s          
+vol 0.99  imb F  1% step 76900, remaining wall clock time:   152 s          
+vol 0.99  imb F  1% step 77000, remaining wall clock time:   151 s          
+vol 0.99  imb F  1% step 77100, remaining wall clock time:   151 s          
+vol 0.99  imb F  1% step 77200, remaining wall clock time:   151 s          
+vol 0.99  imb F  0% step 77300, remaining wall clock time:   150 s          
+vol 0.99  imb F  2% step 77400, remaining wall clock time:   150 s          
+vol 0.99  imb F  1% step 77500, remaining wall clock time:   150 s          
+vol 0.98  imb F  1% step 77600, remaining wall clock time:   149 s          
+vol 0.98  imb F  1% step 77700, remaining wall clock time:   149 s          
+vol 0.99  imb F  0% step 77800, remaining wall clock time:   149 s          
+vol 0.98  imb F  1% step 77900, remaining wall clock time:   148 s          
+vol 0.99  imb F  1% step 78000, remaining wall clock time:   148 s          
+vol 0.99  imb F  1% step 78100, remaining wall clock time:   148 s          
+vol 0.99  imb F  1% step 78200, remaining wall clock time:   148 s          
+vol 0.99  imb F  1% step 78300, remaining wall clock time:   147 s          
+vol 0.99  imb F  1% step 78400, remaining wall clock time:   147 s          
+vol 0.99  imb F  1% step 78500, remaining wall clock time:   147 s          
+vol 0.99  imb F  1% step 78600, remaining wall clock time:   146 s          
+vol 0.99  imb F  1% step 78700, remaining wall clock time:   146 s          
+vol 0.98  imb F  1% step 78800, remaining wall clock time:   146 s          
+vol 0.99  imb F  2% step 78900, remaining wall clock time:   145 s          
+vol 0.98  imb F  0% step 79000, remaining wall clock time:   145 s          
+vol 0.99  imb F  1% step 79100, remaining wall clock time:   145 s          
+vol 0.98  imb F  1% step 79200, remaining wall clock time:   144 s          
+vol 0.98  imb F  0% step 79300, remaining wall clock time:   144 s          
+vol 0.98  imb F  0% step 79400, remaining wall clock time:   144 s          
+vol 0.98  imb F  1% step 79500, remaining wall clock time:   143 s          
+vol 0.99  imb F  1% step 79600, remaining wall clock time:   143 s          
+vol 0.98  imb F  0% step 79700, remaining wall clock time:   143 s          
+vol 0.99  imb F  1% step 79800, remaining wall clock time:   142 s          
+vol 0.99  imb F  1% step 79900, remaining wall clock time:   142 s          
+vol 0.99  imb F  1% step 80000, remaining wall clock time:   142 s          
+vol 0.99  imb F  1% step 80100, remaining wall clock time:   142 s          
+vol 0.99  imb F  1% step 80200, remaining wall clock time:   141 s          
+vol 0.99  imb F  1% step 80300, remaining wall clock time:   141 s          
+vol 0.99  imb F  0% step 80400, remaining wall clock time:   141 s          
+vol 0.99  imb F  0% step 80500, remaining wall clock time:   140 s          
+vol 0.98  imb F  1% step 80600, remaining wall clock time:   140 s          
+vol 0.98  imb F  1% step 80700, remaining wall clock time:   140 s          
+vol 0.98  imb F  1% step 80800, remaining wall clock time:   139 s          
+vol 0.98  imb F  0% step 80900, remaining wall clock time:   139 s          
+vol 0.98  imb F  1% step 81000, remaining wall clock time:   139 s          
+vol 0.98  imb F  1% step 81100, remaining wall clock time:   138 s          
+vol 0.97  imb F  1% step 81200, remaining wall clock time:   138 s          
+vol 0.97  imb F  1% step 81300, remaining wall clock time:   138 s          
+vol 0.97  imb F  1% step 81400, remaining wall clock time:   137 s          
+vol 0.98  imb F  1% step 81500, remaining wall clock time:   137 s          
+vol 0.97  imb F  1% step 81600, remaining wall clock time:   137 s          
+vol 0.97  imb F  1% step 81700, remaining wall clock time:   136 s          
+vol 0.96  imb F  1% step 81800, remaining wall clock time:   136 s          
+vol 0.96  imb F  1% step 81900, remaining wall clock time:   136 s          
+vol 0.96  imb F  0% step 82000, remaining wall clock time:   135 s          
+vol 0.96  imb F  1% step 82100, remaining wall clock time:   135 s          
+vol 0.96  imb F  1% step 82200, remaining wall clock time:   135 s          
+vol 0.96  imb F  1% step 82300, remaining wall clock time:   135 s          
+vol 0.95  imb F  1% step 82400, remaining wall clock time:   134 s          
+vol 0.96  imb F  1% step 82500, remaining wall clock time:   134 s          
+vol 0.96  imb F  0% step 82600, remaining wall clock time:   134 s          
+vol 0.96  imb F  1% step 82700, remaining wall clock time:   133 s          
+vol 0.96  imb F  1% step 82800, remaining wall clock time:   133 s          
+vol 0.97  imb F  1% step 82900, remaining wall clock time:   133 s          
+vol 0.97  imb F  1% step 83000, remaining wall clock time:   132 s          
+vol 0.98  imb F  1% step 83100, remaining wall clock time:   132 s          
+vol 0.98  imb F  1% step 83200, remaining wall clock time:   132 s          
+vol 0.99  imb F  1% step 83300, remaining wall clock time:   131 s          
+vol 0.99  imb F  1% step 83400, remaining wall clock time:   131 s          
+vol 0.99  imb F  1% step 83500, remaining wall clock time:   131 s          
+vol 0.99  imb F  0% step 83600, remaining wall clock time:   130 s          
+vol 0.98  imb F  1% step 83700, remaining wall clock time:   130 s          
+vol 0.99  imb F  1% step 83800, remaining wall clock time:   130 s          
+vol 0.98  imb F  1% step 83900, remaining wall clock time:   129 s          
+vol 0.98  imb F  1% step 84000, remaining wall clock time:   129 s          
+vol 0.99  imb F  1% step 84100, remaining wall clock time:   129 s          
+vol 0.98  imb F  1% step 84200, remaining wall clock time:   129 s          
+vol 0.98  imb F  2% step 84300, remaining wall clock time:   128 s          
+vol 0.98  imb F  2% step 84400, remaining wall clock time:   128 s          
+vol 0.98  imb F  1% step 84500, remaining wall clock time:   128 s          
+vol 0.98  imb F  1% step 84600, remaining wall clock time:   127 s          
+vol 0.98  imb F  1% step 84700, remaining wall clock time:   127 s          
+vol 0.98  imb F  1% step 84800, remaining wall clock time:   127 s          
+vol 0.98  imb F  0% step 84900, remaining wall clock time:   126 s          
+vol 0.98  imb F  0% step 85000, remaining wall clock time:   126 s          
+vol 0.98  imb F  1% step 85100, remaining wall clock time:   126 s          
+vol 0.99  imb F  0% step 85200, remaining wall clock time:   125 s          
+vol 0.98  imb F  0% step 85300, remaining wall clock time:   125 s          
+vol 0.99  imb F  0% step 85400, remaining wall clock time:   125 s          
+vol 0.99  imb F  0% step 85500, remaining wall clock time:   124 s          
+vol 0.99  imb F  1% step 85600, remaining wall clock time:   124 s          
+vol 0.99  imb F  2% step 85700, remaining wall clock time:   124 s          
+vol 0.99  imb F  1% step 85800, remaining wall clock time:   123 s          
+vol 0.99  imb F  0% step 85900, remaining wall clock time:   123 s          
+vol 0.99  imb F  1% step 86000, remaining wall clock time:   123 s          
+vol 0.99  imb F  0% step 86100, remaining wall clock time:   123 s          
+vol 0.99  imb F  1% step 86200, remaining wall clock time:   122 s          
+vol 0.99  imb F  1% step 86300, remaining wall clock time:   122 s          
+vol 0.99  imb F  1% step 86400, remaining wall clock time:   122 s          
+vol 0.99  imb F  1% step 86500, remaining wall clock time:   121 s          
+vol 0.98  imb F  0% step 86600, remaining wall clock time:   121 s          
+vol 0.98  imb F  1% step 86700, remaining wall clock time:   121 s          
+vol 0.99  imb F  1% step 86800, remaining wall clock time:   120 s          
+vol 0.99  imb F  1% step 86900, remaining wall clock time:   120 s          
+vol 0.99  imb F  0% step 87000, remaining wall clock time:   120 s          
+vol 0.99  imb F  1% step 87100, remaining wall clock time:   119 s          
+vol 0.98  imb F  0% step 87200, remaining wall clock time:   119 s          
+vol 0.98  imb F  1% step 87300, remaining wall clock time:   119 s          
+vol 0.99  imb F  1% step 87400, remaining wall clock time:   118 s          
+vol 0.99  imb F  1% step 87500, remaining wall clock time:   118 s          
+vol 0.99  imb F  1% step 87600, remaining wall clock time:   118 s          
+vol 0.99  imb F  0% step 87700, remaining wall clock time:   117 s          
+vol 0.99  imb F  1% step 87800, remaining wall clock time:   117 s          
+vol 0.99  imb F  1% step 87900, remaining wall clock time:   117 s          
+vol 0.99  imb F  1% step 88000, remaining wall clock time:   117 s          
+vol 0.99  imb F  1% step 88100, remaining wall clock time:   116 s          
+vol 0.99  imb F  2% step 88200, remaining wall clock time:   116 s          
+vol 0.98  imb F  1% step 88300, remaining wall clock time:   116 s          
+vol 0.98  imb F  2% step 88400, remaining wall clock time:   115 s          
+vol 0.97  imb F  1% step 88500, remaining wall clock time:   115 s          
+vol 0.96  imb F  1% step 88600, remaining wall clock time:   115 s          
+vol 0.96  imb F  1% step 88700, remaining wall clock time:   114 s          
+vol 0.96  imb F  1% step 88800, remaining wall clock time:   114 s          
+vol 0.95  imb F  2% step 88900, remaining wall clock time:   114 s          
+vol 0.96  imb F  1% step 89000, remaining wall clock time:   113 s          
+vol 0.96  imb F  2% step 89100, remaining wall clock time:   113 s          
+vol 0.97  imb F  1% step 89200, remaining wall clock time:   113 s          
+vol 0.97  imb F  0% step 89300, remaining wall clock time:   112 s          
+vol 0.97  imb F  2% step 89400, remaining wall clock time:   112 s          
+vol 0.98  imb F  1% step 89500, remaining wall clock time:   112 s          
+vol 0.98  imb F  1% step 89600, remaining wall clock time:   111 s          
+vol 0.98  imb F  0% step 89700, remaining wall clock time:   111 s          
+vol 0.98  imb F  1% step 89800, remaining wall clock time:   111 s          
+vol 0.98  imb F  1% step 89900, remaining wall clock time:   111 s          
+vol 0.98  imb F  1% step 90000, remaining wall clock time:   110 s          
+vol 0.98  imb F  2% step 90100, remaining wall clock time:   110 s          
+vol 0.98  imb F  2% step 90200, remaining wall clock time:   110 s          
+vol 0.98  imb F  2% step 90300, remaining wall clock time:   109 s          
+vol 0.97  imb F  1% step 90400, remaining wall clock time:   109 s          
+vol 0.97  imb F  0% step 90500, remaining wall clock time:   109 s          
+vol 0.97  imb F  3% step 90600, remaining wall clock time:   108 s          
+vol 0.98  imb F  1% step 90700, remaining wall clock time:   108 s          
+vol 0.97  imb F  0% step 90800, remaining wall clock time:   108 s          
+vol 0.97  imb F  1% step 90900, remaining wall clock time:   107 s          
+vol 0.98  imb F  1% step 91000, remaining wall clock time:   107 s          
+vol 0.98  imb F  1% step 91100, remaining wall clock time:   107 s          
+vol 0.97  imb F  1% step 91200, remaining wall clock time:   106 s          
+vol 0.97  imb F  1% step 91300, remaining wall clock time:   106 s          
+vol 0.97  imb F  1% step 91400, remaining wall clock time:   106 s          
+vol 0.97  imb F  1% step 91500, remaining wall clock time:   105 s          
+vol 0.97  imb F  0% step 91600, remaining wall clock time:   105 s          
+vol 0.97  imb F  1% step 91700, remaining wall clock time:   105 s          
+vol 0.98  imb F  0% step 91800, remaining wall clock time:   104 s          
+vol 0.97  imb F  0% step 91900, remaining wall clock time:   104 s          
+vol 0.98  imb F  1% step 92000, remaining wall clock time:   104 s          
+vol 0.98  imb F  1% step 92100, remaining wall clock time:   104 s          
+vol 0.98  imb F  2% step 92200, remaining wall clock time:   103 s          
+vol 0.97  imb F  1% step 92300, remaining wall clock time:   103 s          
+vol 0.96  imb F  1% step 92400, remaining wall clock time:   103 s          
+vol 0.96  imb F  1% step 92500, remaining wall clock time:   102 s          
+vol 0.97  imb F  1% step 92600, remaining wall clock time:   102 s          
+vol 0.97  imb F  2% step 92700, remaining wall clock time:   102 s          
+vol 0.96  imb F  1% step 92800, remaining wall clock time:   101 s          
+vol 0.97  imb F  1% step 92900, remaining wall clock time:   101 s          
+vol 0.96  imb F  1% step 93000, remaining wall clock time:   101 s          
+vol 0.96  imb F  1% step 93100, remaining wall clock time:   100 s          
+vol 0.96  imb F  2% step 93200, remaining wall clock time:   100 s          
+vol 0.97  imb F  1% step 93300, remaining wall clock time:   100 s          
+vol 0.98  imb F  1% step 93400, remaining wall clock time:    99 s          
+vol 0.98  imb F  1% step 93500, remaining wall clock time:    99 s          
+vol 0.99  imb F  0% step 93600, remaining wall clock time:    99 s          
+vol 0.98  imb F  1% step 93700, remaining wall clock time:    98 s          
+vol 0.99  imb F  1% step 93800, remaining wall clock time:    98 s          
+vol 0.98  imb F  0% step 93900, remaining wall clock time:    98 s          
+vol 0.99  imb F  1% step 94000, remaining wall clock time:    98 s          
+vol 0.98  imb F  1% step 94100, remaining wall clock time:    97 s          
+vol 0.98  imb F  1% step 94200, remaining wall clock time:    97 s          
+vol 0.98  imb F  1% step 94300, remaining wall clock time:    97 s          
+vol 0.98  imb F  1% step 94400, remaining wall clock time:    96 s          
+vol 0.97  imb F  0% step 94500, remaining wall clock time:    96 s          
+vol 0.97  imb F  1% step 94600, remaining wall clock time:    96 s          
+vol 0.97  imb F  1% step 94700, remaining wall clock time:    95 s          
+vol 0.97  imb F  1% step 94800, remaining wall clock time:    95 s          
+vol 0.97  imb F  1% step 94900, remaining wall clock time:    95 s          
+vol 0.97  imb F  0% step 95000, remaining wall clock time:    94 s          
+vol 0.98  imb F  1% step 95100, remaining wall clock time:    94 s          
+vol 0.98  imb F  1% step 95200, remaining wall clock time:    94 s          
+vol 0.98  imb F  1% step 95300, remaining wall clock time:    93 s          
+vol 0.98  imb F  1% step 95400, remaining wall clock time:    93 s          
+vol 0.98  imb F  1% step 95500, remaining wall clock time:    93 s          
+vol 0.98  imb F  1% step 95600, remaining wall clock time:    92 s          
+vol 0.98  imb F  1% step 95700, remaining wall clock time:    92 s          
+vol 0.98  imb F  0% step 95800, remaining wall clock time:    92 s          
+vol 0.98  imb F  1% step 95900, remaining wall clock time:    92 s          
+vol 0.98  imb F  0% step 96000, remaining wall clock time:    91 s          
+vol 0.98  imb F  1% step 96100, remaining wall clock time:    91 s          
+vol 0.97  imb F  1% step 96200, remaining wall clock time:    91 s          
+vol 0.98  imb F  1% step 96300, remaining wall clock time:    90 s          
+vol 0.98  imb F  1% step 96400, remaining wall clock time:    90 s          
+vol 0.97  imb F  1% step 96500, remaining wall clock time:    90 s          
+vol 0.97  imb F  1% step 96600, remaining wall clock time:    89 s          
+vol 0.96  imb F  1% step 96700, remaining wall clock time:    89 s          
+vol 0.96  imb F  1% step 96800, remaining wall clock time:    89 s          
+vol 0.96  imb F  1% step 96900, remaining wall clock time:    88 s          
+vol 0.96  imb F  0% step 97000, remaining wall clock time:    88 s          
+vol 0.96  imb F  1% step 97100, remaining wall clock time:    88 s          
+vol 0.96  imb F  1% step 97200, remaining wall clock time:    87 s          
+vol 0.96  imb F  2% step 97300, remaining wall clock time:    87 s          
+vol 0.96  imb F  1% step 97400, remaining wall clock time:    87 s          
+vol 0.96  imb F  1% step 97500, remaining wall clock time:    86 s          
+vol 0.96  imb F  1% step 97600, remaining wall clock time:    86 s          
+vol 0.96  imb F  1% step 97700, remaining wall clock time:    86 s          
+vol 0.96  imb F  0% step 97800, remaining wall clock time:    86 s          
+vol 0.97  imb F  1% step 97900, remaining wall clock time:    85 s          
+vol 0.97  imb F  1% step 98000, remaining wall clock time:    85 s          
+vol 0.97  imb F  1% step 98100, remaining wall clock time:    85 s          
+vol 0.97  imb F  0% step 98200, remaining wall clock time:    84 s          
+vol 0.97  imb F  2% step 98300, remaining wall clock time:    84 s          
+vol 0.97  imb F  2% step 98400, remaining wall clock time:    84 s          
+vol 0.97  imb F  1% step 98500, remaining wall clock time:    83 s          
+vol 0.96  imb F  1% step 98600, remaining wall clock time:    83 s          
+vol 0.96  imb F  1% step 98700, remaining wall clock time:    83 s          
+vol 0.97  imb F  0% step 98800, remaining wall clock time:    82 s          
+vol 0.96  imb F  1% step 98900, remaining wall clock time:    82 s          
+vol 0.96  imb F  0% step 99000, remaining wall clock time:    82 s          
+vol 0.96  imb F  1% step 99100, remaining wall clock time:    81 s          
+vol 0.96  imb F  1% step 99200, remaining wall clock time:    81 s          
+vol 0.96  imb F  2% step 99300, remaining wall clock time:    81 s          
+vol 0.97  imb F  1% step 99400, remaining wall clock time:    80 s          
+vol 0.97  imb F  1% step 99500, remaining wall clock time:    80 s          
+vol 0.97  imb F  1% step 99600, remaining wall clock time:    80 s          
+vol 0.97  imb F  1% step 99700, remaining wall clock time:    80 s          
+vol 0.97  imb F  1% step 99800, remaining wall clock time:    79 s          
+vol 0.97  imb F  1% step 99900, remaining wall clock time:    79 s          
+vol 0.97  imb F  1% step 100000, remaining wall clock time:    79 s          
+vol 0.98  imb F  1% step 100100, remaining wall clock time:    78 s          
+vol 0.97  imb F  1% step 100200, remaining wall clock time:    78 s          
+vol 0.98  imb F  0% step 100300, remaining wall clock time:    78 s          
+vol 0.98  imb F  1% step 100400, remaining wall clock time:    77 s          
+vol 0.98  imb F  0% step 100500, remaining wall clock time:    77 s          
+vol 0.98  imb F  1% step 100600, remaining wall clock time:    77 s          
+vol 0.98  imb F  1% step 100700, remaining wall clock time:    76 s          
+vol 0.98  imb F  1% step 100800, remaining wall clock time:    76 s          
+vol 0.98  imb F  1% step 100900, remaining wall clock time:    76 s          
+vol 0.99  imb F  2% step 101000, remaining wall clock time:    75 s          
+vol 0.98  imb F  1% step 101100, remaining wall clock time:    75 s          
+vol 0.98  imb F  1% step 101200, remaining wall clock time:    75 s          
+vol 0.98  imb F  2% step 101300, remaining wall clock time:    74 s          
+vol 0.97  imb F  1% step 101400, remaining wall clock time:    74 s          
+vol 0.98  imb F  0% step 101500, remaining wall clock time:    74 s          
+vol 0.98  imb F  1% step 101600, remaining wall clock time:    73 s          
+vol 0.97  imb F  1% step 101700, remaining wall clock time:    73 s          
+vol 0.97  imb F  0% step 101800, remaining wall clock time:    73 s          
+vol 0.97  imb F  1% step 101900, remaining wall clock time:    73 s          
+vol 0.97  imb F  2% step 102000, remaining wall clock time:    72 s          
+vol 0.98  imb F  1% step 102100, remaining wall clock time:    72 s          
+vol 0.98  imb F  0% step 102200, remaining wall clock time:    72 s          
+vol 0.98  imb F  1% step 102300, remaining wall clock time:    71 s          
+vol 0.98  imb F  1% step 102400, remaining wall clock time:    71 s          
+vol 0.97  imb F  1% step 102500, remaining wall clock time:    71 s          
+vol 0.97  imb F  2% step 102600, remaining wall clock time:    70 s          
+vol 0.98  imb F  2% step 102700, remaining wall clock time:    70 s          
+vol 0.98  imb F  1% step 102800, remaining wall clock time:    70 s          
+vol 0.98  imb F  1% step 102900, remaining wall clock time:    69 s          
+vol 0.98  imb F  1% step 103000, remaining wall clock time:    69 s          
+vol 0.98  imb F  1% step 103100, remaining wall clock time:    69 s          
+vol 0.98  imb F  0% step 103200, remaining wall clock time:    68 s          
+vol 0.97  imb F  0% step 103300, remaining wall clock time:    68 s          
+vol 0.98  imb F  1% step 103400, remaining wall clock time:    68 s          
+vol 0.98  imb F  1% step 103500, remaining wall clock time:    67 s          
+vol 0.98  imb F  1% step 103600, remaining wall clock time:    67 s          
+vol 0.98  imb F  2% step 103700, remaining wall clock time:    67 s          
+vol 0.97  imb F  2% step 103800, remaining wall clock time:    67 s          
+vol 0.97  imb F  1% step 103900, remaining wall clock time:    66 s          
+vol 0.98  imb F  1% step 104000, remaining wall clock time:    66 s          
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 51359238 ON cm038 CANCELLED AT 2024-09-26T15:07:14 ***
+slurmstepd: error: *** STEP 51359238.3 ON cm038 CANCELLED AT 2024-09-26T15:07:14 ***
