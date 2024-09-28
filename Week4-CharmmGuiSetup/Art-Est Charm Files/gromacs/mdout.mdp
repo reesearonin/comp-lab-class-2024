@@ -1,8 +1,8 @@
 ;
 ;	File 'mdout.mdp' was generated
 ;	By user: unknown (3433697)
-;	On host: cm011.hpc.nyu.edu
-;	At date: Thu Sep 26 19:31:42 2024
+;	On host: cm005.hpc.nyu.edu
+;	At date: Fri Sep 27 23:50:24 2024
 ;
 ;	Created by:
 ;	                     :-) GROMACS - gmx grompp, 2023.3 (-:
@@ -171,7 +171,7 @@ annealing-temp           =
 ; GENERATE VELOCITIES FOR STARTUP RUN
 gen-vel                  = no
 gen-temp                 = 300
-gen-seed                 = -1103726977
+gen-seed                 = 266333042
 
 ; OPTIONS FOR BONDS    
 constraints              = h-bonds
