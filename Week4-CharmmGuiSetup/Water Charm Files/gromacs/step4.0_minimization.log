@@ -41,7 +41,7 @@ GROMACS:      gmx mdrun, version 2023.3
 Executable:   /ext3/apps/gromacs/2023.3/openmpi/intel/bin/gmx_mpi
 Data prefix:  /ext3/apps/gromacs/2023.3/openmpi/intel
 Working dir:  /scratch/work/courses/CHEM-GA-2671-2024fa/students/ra3194/comp-lab-class-2024/Week4-CharmmGuiSetup/Water Charm Files/gromacs
-Process ID:   1363626
+Process ID:   2449556
 Command line:
   gmx_mpi mdrun -v -deffnm step4.0_minimization
 
@@ -68,7 +68,7 @@ LAPACK library:     External - detected on the system
 
 
 Running on 1 node with total 10 cores, 10 processing units
-Hardware detected on host cm002.hpc.nyu.edu (the node of MPI rank 0):
+Hardware detected on host cm006.hpc.nyu.edu (the node of MPI rank 0):
   CPU info:
     Vendor: Intel
     Brand:  Intel(R) Xeon(R) Platinum 8268 CPU @ 2.90GHz
@@ -78,8 +78,8 @@ Hardware detected on host cm002.hpc.nyu.edu (the node of MPI rank 0):
   Hardware topology: Basic
     Packages, cores, and logical processors:
     [indices refer to OS logical processors]
-      Package  0: [   0] [   6] [   7] [  10] [  17] [  23]
-      Package  1: [  31] [  45] [  46] [  47]
+      Package  0: [   2] [   3] [   6] [   7]
+      Package  1: [  31] [  32] [  34] [  35] [  36] [  37]
     CPU limit set by OS: -1   Recommended max number of threads: 10
 
 Likely fastest SIMD instructions supported by all nodes: AVX_512
@@ -162,7 +162,7 @@ Input Parameters:
    comm-mode                      = Linear
    nstcomm                        = 100
    bd-fric                        = 0
-   ld-seed                        = 1190903703
+   ld-seed                        = -10503171
    emtol                          = 1000
    emstep                         = 0.01
    niter                          = 20
@@ -383,7 +383,7 @@ Note that activating steepest-descent energy minimization via the integrator .md
 Initiating Steepest Descents
 
 Atom distribution over 1 domains: av 11636 stddev 0 min 11636 max 11636
-Started Steepest Descents on rank 0 Thu Sep 26 15:38:00 2024
+Started Steepest Descents on rank 0 Fri Sep 27 19:37:30 2024
 
 
 Steepest Descents:
@@ -406,5 +406,5 @@ Norm of force     =  5.5332296e+01
 
  av. #atoms communicated per step for force:  2 x 0.0
 
-Finished mdrun on rank 0 Thu Sep 26 15:38:00 2024
+Finished mdrun on rank 0 Fri Sep 27 19:37:31 2024
 
