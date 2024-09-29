@@ -1,0 +1,92 @@
+                      :-) GROMACS - gmx grompp, 2023.3 (-:
+
+Executable:   /ext3/apps/gromacs/2023.3/openmpi/intel/bin/gmx_mpi
+Data prefix:  /ext3/apps/gromacs/2023.3/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2024fa/students/ra3194/comp-lab-class-2024/Week4-CharmmGuiSetup/Water Charm Files/gromacs
+Command line:
+  gmx_mpi grompp -f step4.0_minimization.mdp -o step4.0_minimization.tpr -c step3_input.gro -r step3_input.gro -p topol.top -n index.ndx -maxwarn 2
+
+Generating 1-4 interactions: fudge = 1
+
+WARNING 1 [file topol.top, line 24]:
+  The following macros were defined in the 'define' mdp field with the -D
+  prefix, but were not used in the topology:
+      POSRES_FC_SC
+      POSRES_FC_BB
+      POSRES
+  If you haven't made a spelling error, either use the macro you defined,
+  or don't define the macro
+
+Number of degrees of freedom in T-Coupling group rest is 23283.00
+The integrator does not provide a ensemble temperature, there is no system ensemble temperature
+
+There was 1 WARNING
+
+Back Off! I just backed up step4.0_minimization.tpr to ./#step4.0_minimization.tpr.2#
+
+GROMACS reminds you: "Baby, It Aint Over Till It's Over" (Lenny Kravitz)
+
+Setting the LD random seed to -1426104341
+
+Generated 9 of the 10 non-bonded parameter combinations
+
+Generated 10 of the 10 1-4 parameter combinations
+
+Excluding 1 bonded neighbours molecule type 'SOD'
+
+turning H bonds into constraints...
+
+Excluding 1 bonded neighbours molecule type 'CLA'
+
+turning H bonds into constraints...
+
+Excluding 2 bonded neighbours molecule type 'TIP3'
+
+turning H bonds into constraints...
+
+The largest distance between excluded atoms is 0.156 nm between atom 9013 and 9014
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 42x42x42, spacing 0.119 0.119 0.119
+
+Estimate for the relative computational load of the PME mesh part: 0.16
+
+This run will generate roughly 1 Mb of data
+                      :-) GROMACS - gmx mdrun, 2023.3 (-:
+
+Executable:   /ext3/apps/gromacs/2023.3/openmpi/intel/bin/gmx_mpi
+Data prefix:  /ext3/apps/gromacs/2023.3/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2024fa/students/ra3194/comp-lab-class-2024/Week4-CharmmGuiSetup/Water Charm Files/gromacs
+Command line:
+  gmx_mpi mdrun -v -deffnm step4.0_minimization
+
+
+Back Off! I just backed up step4.0_minimization.log to ./#step4.0_minimization.log.2#
+Compiled SIMD is AVX2_256, but CPU also supports AVX_512 (see log).
+Reading file step4.0_minimization.tpr, VERSION 2023.3 (single precision)
+Using 1 MPI process
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Back Off! I just backed up step4.0_minimization.trr to ./#step4.0_minimization.trr.2#
+
+Back Off! I just backed up step4.0_minimization.edr to ./#step4.0_minimization.edr.2#
+
+Steepest Descents:
+   Tolerance (Fmax)   =  1.00000e+03
+   Number of steps    =         5000
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.84816e+05 Fmax= 9.02801e+02, atom= 8046
+
+writing lowest energy coordinates.
+
+Back Off! I just backed up step4.0_minimization.gro to ./#step4.0_minimization.gro.2#
+
+Steepest Descents converged to Fmax < 1000 in 1 steps
+Potential Energy  = -1.8481641e+05
+Maximum force     =  9.0280072e+02 on atom 8046
+Norm of force     =  5.5332296e+01
+
+GROMACS reminds you: "I Used To Care, But Things Have Changed" (Bob Dylan)
+
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 51435634 ON cm037 CANCELLED AT 2024-09-28T20:56:04 ***
+slurmstepd: error: *** STEP 51435634.2 ON cm037 CANCELLED AT 2024-09-28T20:56:04 ***
