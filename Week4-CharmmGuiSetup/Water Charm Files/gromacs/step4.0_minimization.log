@@ -41,7 +41,7 @@ GROMACS:      gmx mdrun, version 2023.3
 Executable:   /ext3/apps/gromacs/2023.3/openmpi/intel/bin/gmx_mpi
 Data prefix:  /ext3/apps/gromacs/2023.3/openmpi/intel
 Working dir:  /scratch/work/courses/CHEM-GA-2671-2024fa/students/ra3194/comp-lab-class-2024/Week4-CharmmGuiSetup/Water Charm Files/gromacs
-Process ID:   2388365
+Process ID:   3910674
 Command line:
   gmx_mpi mdrun -v -deffnm step4.0_minimization
 
@@ -67,8 +67,8 @@ BLAS library:       External - detected on the system
 LAPACK library:     External - detected on the system
 
 
-Running on 1 node with total 24 cores, 24 processing units
-Hardware detected on host cs371.hpc.nyu.edu (the node of MPI rank 0):
+Running on 1 node with total 10 cores, 10 processing units
+Hardware detected on host cs027.hpc.nyu.edu (the node of MPI rank 0):
   CPU info:
     Vendor: Intel
     Brand:  Intel(R) Xeon(R) Platinum 8268 CPU @ 2.90GHz
@@ -78,8 +78,8 @@ Hardware detected on host cs371.hpc.nyu.edu (the node of MPI rank 0):
   Hardware topology: Basic
     Packages, cores, and logical processors:
     [indices refer to OS logical processors]
-      Package  1: [  24] [  25] [  26] [  27] [  28] [  29] [  30] [  31] [  32] [  33] [  34] [  35] [  36] [  37] [  38] [  39] [  40] [  41] [  42] [  43] [  44] [  45] [  46] [  47]
-    CPU limit set by OS: -1   Recommended max number of threads: 24
+      Package  0: [  12] [  13] [  14] [  15] [  18] [  19] [  20] [  21] [  22] [  23]
+    CPU limit set by OS: -1   Recommended max number of threads: 10
 
 Likely fastest SIMD instructions supported by all nodes: AVX_512
 SIMD instructions selected at compile time:              AVX2_256
@@ -161,7 +161,7 @@ Input Parameters:
    comm-mode                      = Linear
    nstcomm                        = 100
    bd-fric                        = 0
-   ld-seed                        = -1611672579
+   ld-seed                        = -92307466
    emtol                          = 1000
    emstep                         = 0.01
    niter                          = 20
@@ -382,7 +382,7 @@ Note that activating steepest-descent energy minimization via the integrator .md
 Initiating Steepest Descents
 
 Atom distribution over 1 domains: av 11636 stddev 0 min 11636 max 11636
-Started Steepest Descents on rank 0 Sat Sep 28 21:42:05 2024
+Started Steepest Descents on rank 0 Sun Sep 29 13:26:06 2024
 
 
 Steepest Descents:
@@ -405,5 +405,5 @@ Norm of force     =  5.5332296e+01
 
  av. #atoms communicated per step for force:  2 x 0.0
 
-Finished mdrun on rank 0 Sat Sep 28 21:42:05 2024
+Finished mdrun on rank 0 Sun Sep 29 13:26:06 2024
 
