@@ -1,0 +1,10 @@
+When aligning the AF2 and AF3 actin profilin structures and comparing the 
+distances between actin residue i in both structures, there is a clear misalignment
+seen in this area in PyMOL which is residues 41-51 on the bar graph made. This
+area is not near the nucleotide. In PyMOL, this area is represented as a thin tube 
+instead of a ribbon structure. 
+
+It doesn't look like there is anything clearly special about the amino acids near
+the uricil oxygen. Some are polar uncharged, some are negatively charged, 
+some are positively charged, and some are hydrophobic. I would have expected 
+all of them to be polar and able to hydrogen bond with the uricil oxygen. 
