@@ -1,0 +1,145 @@
+Creating the system...
+LAMMPS (15 Sep 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Lattice spacing in x,y,z = 1.4938016 1.4938016 1.4938016
+Created orthogonal box = (0 0 0) to (6.6943295 6.6943295 6.6943295)
+  1 by 2 by 2 MPI processor grid
+Created 365 atoms
+  using lattice units in orthogonal box = (0 0 0) to (6.6943295 6.6943295 6.6943295)
+  create_atoms CPU = 0.096 seconds
+Setting atom values ...
+  77 settings made for type
+5 atoms in group extra
+Deleted 5 atoms, new total = 360
+288 atoms in group typea
+72 atoms in group typeb
+Minimizing initial structure
+Generated 0 of 1 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 3
+  ghost atom cutoff = 3
+  binsize = 1.5, bins = 5 5 5
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/cut, perpetual
+      attributes: half, newton on
+      pair build: half/bin/atomonly/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : lj
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.13 | 4.13 | 4.131 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   0              31.924966      0              31.924966      202.31477    
+      1000   15.884536      7.9779771      0              31.738595      107.46448    
+      2000   17.225344      5.9694166      0              31.73566       98.119254    
+      3000   17.041806      6.2477053      0              31.739407      98.328932    
+      4000   16.342986      7.2942712      0              31.740655      103.54511    
+      5000   16.488682      7.0735922      0              31.737912      102.50661    
+      6000   17.193786      6.0196932      0              31.738731      97.401312    
+      7000   17.570058      5.4596157      0              31.741494      94.74889     
+      8000   17.177303      6.0456136      0              31.739997      97.861044    
+      9000   16.986798      6.3310021      0              31.740421      98.990805    
+     10000   17.084804      6.1828112      0              31.738831      98.23776     
+Loop time of 1.10219 on 4 procs for 10000 steps with 360 atoms
+
+Performance: 783896.652 tau/day, 9072.878 timesteps/s, 3.266 Matom-step/s
+99.3% CPU use with 4 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.54149    | 0.57007    | 0.60084    |   3.6 | 51.72
+Neigh   | 0.10439    | 0.1083     | 0.11337    |   1.1 |  9.83
+Comm    | 0.33847    | 0.38088    | 0.42172    |   5.2 | 34.56
+Output  | 0.0016635  | 0.0016996  | 0.0017739  |   0.1 |  0.15
+Modify  | 0.009824   | 0.010014   | 0.010278   |   0.2 |  0.91
+Other   |            | 0.03123    |            |       |  2.83
+
+Nlocal:             90 ave          94 max          83 min
+Histogram: 1 0 0 0 0 0 1 0 0 2
+Nghost:         1246.5 ave        1262 max        1233 min
+Histogram: 1 1 0 0 0 0 0 1 0 1
+Neighs:         5168.5 ave        5488 max        4910 min
+Histogram: 1 0 0 1 1 0 0 0 0 1
+
+Total # of neighbors = 20674
+Ave neighs/atom = 57.427778
+Neighbor list builds = 609
+Dangerous builds = 0
+Total wall time: 0:00:01
+Annealing from T1.5 to T1.0...
+LAMMPS (15 Sep 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Reading restart file ...
+ERROR on proc 0: Cannot open restart file equil/kalj_T1.5_n360_v300_10000_1.final.lmprestart.10000: No such file or directory (src/read_restart.cpp:113)
+Last command: read_restart ${prevbasename}.final.lmprestart.${prevsteps}
+Annealing from T1.0 to T0.9...
+LAMMPS (15 Sep 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Reading restart file ...
+ERROR on proc 0: Cannot open restart file equil/kalj_T1_n360_v300_50000_1.final.lmprestart.50000: No such file or directory (src/read_restart.cpp:113)
+Last command: read_restart ${prevbasename}.final.lmprestart.${prevsteps}
+Annealing from T0.9 to T0.8...
+LAMMPS (15 Sep 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Reading restart file ...
+ERROR on proc 0: Cannot open restart file equil/kalj_T0.9_n360_v300_150000_1.final.lmprestart.150000: No such file or directory (src/read_restart.cpp:113)
+Last command: read_restart ${prevbasename}.final.lmprestart.${prevsteps}
+Annealing from T0.8 to T0.7...
+LAMMPS (15 Sep 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Reading restart file ...
+ERROR on proc 0: Cannot open restart file equil/kalj_T0.8_n360_v300_150000_1.final.lmprestart.150000: No such file or directory (src/read_restart.cpp:113)
+Last command: read_restart ${prevbasename}.final.lmprestart.${prevsteps}
+Annealing from T0.7 to T0.65...
+LAMMPS (15 Sep 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Reading restart file ...
+ERROR on proc 0: Cannot open restart file equil/kalj_T0.7_n360_v300_180000_1.final.lmprestart.180000: No such file or directory (src/read_restart.cpp:113)
+Last command: read_restart ${prevbasename}.final.lmprestart.${prevsteps}
+Annealing from T0.65 to T0.6...
+LAMMPS (15 Sep 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Reading restart file ...
+ERROR on proc 0: Cannot open restart file equil/kalj_T0.65_n360_v300_350000_1.final.lmprestart.350000: No such file or directory (src/read_restart.cpp:113)
+Last command: read_restart ${prevbasename}.final.lmprestart.${prevsteps}
+Annealing from T0.6 to T0.55...
+LAMMPS (15 Sep 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Reading restart file ...
+ERROR on proc 0: Cannot open restart file equil/kalj_T0.6_n360_v300_1000000_1.final.lmprestart.1000000: No such file or directory (src/read_restart.cpp:113)
+Last command: read_restart ${prevbasename}.final.lmprestart.${prevsteps}
+Annealing from T0.55 to T0.5...
+LAMMPS (15 Sep 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Reading restart file ...
+ERROR on proc 0: Cannot open restart file equil/kalj_T0.55_n360_v300_3000000_1.final.lmprestart.3000000: No such file or directory (src/read_restart.cpp:113)
+Last command: read_restart ${prevbasename}.final.lmprestart.${prevsteps}
+Annealing from T0.5 to T0.475...
+LAMMPS (15 Sep 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Reading restart file ...
+ERROR on proc 0: Cannot open restart file equil/kalj_T0.5_n360_v300_10000000_1.final.lmprestart.10000000: No such file or directory (src/read_restart.cpp:113)
+Last command: read_restart ${prevbasename}.final.lmprestart.${prevsteps}
+Annealing from T0.475 to T0.45...
+LAMMPS (15 Sep 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Reading restart file ...
+ERROR on proc 0: Cannot open restart file equil/kalj_T0.475_n360_v300_30000000_1.final.lmprestart.30000000: No such file or directory (src/read_restart.cpp:113)
+Last command: read_restart ${prevbasename}.final.lmprestart.${prevsteps}
+Annealing process completed.
