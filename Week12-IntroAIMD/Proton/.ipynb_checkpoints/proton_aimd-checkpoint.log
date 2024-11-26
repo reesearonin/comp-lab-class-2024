@@ -1,0 +1,94 @@
+ DBCSR| CPU Multiplication driver                                           XSMM
+ DBCSR| Multrec recursion limit                                              512
+ DBCSR| Multiplication stack size                                           1000
+ DBCSR| Maximum elements for images                                    UNLIMITED
+ DBCSR| Multiplicative factor virtual images                                   1
+ DBCSR| Use multiplication densification                                       T
+ DBCSR| Multiplication size stacks                                             3
+ DBCSR| Use memory pool for CPU allocation                                     F
+ DBCSR| Number of 3D layers                                               SINGLE
+ DBCSR| Use MPI memory allocation                                              F
+ DBCSR| Use RMA algorithm                                                      F
+ DBCSR| Use Communication thread                                               T
+ DBCSR| Communication thread load                                             87
+ DBCSR| MPI: My node id                                                        0
+ DBCSR| MPI: Number of nodes                                                  12
+ DBCSR| OMP: Current number of threads                                         1
+ DBCSR| OMP: Max number of threads                                             1
+ DBCSR| Split modifier for TAS multiplication algorithm                  1.0E+00
+
+
+  **** **** ******  **  PROGRAM STARTED AT               2024-11-21 15:04:07.979
+ ***** ** ***  *** **   PROGRAM STARTED ON                     cs029.hpc.nyu.edu
+ **    ****   ******    PROGRAM STARTED BY                                ra3194
+ ***** **    ** ** **   PROGRAM PROCESS ID                               3645602
+  **** **  *******  **  PROGRAM STARTED IN /scratch/work/courses/CHEM-GA-2671-20
+                                           24fa/students/ra3194/comp-lab-class-2
+                                           024/Week12-IntroAIMD/Runs/Proton
+
+ CP2K| version string:                    CP2K version 8.0 (Development Version)
+ CP2K| source code revision number:                                  git:8c64c6e
+ CP2K| cp2kflags: omp libint fftw3 libxc elpa parallel mpi3 scalapack xsmm max_c
+ CP2K|            ontr=4 mkl
+ CP2K| is freely available from                            https://www.cp2k.org/
+ CP2K| Program compiled at                          Sat Dec 12 18:27:15 EST 2020
+ CP2K| Program compiled on                                     cs001.nyu.cluster
+ CP2K| Program compiled for                                            nyu-intel
+ CP2K| Data directory path                    /home/wang/cp2k-20201212/cp2k/data
+ CP2K| Input file name                                                proton.inp
+ 
+ GLOBAL| Force Environment number                                              1
+ GLOBAL| Basis set file name                                           HFX_BASIS
+ GLOBAL| Potential file name                                      GTH_POTENTIALS
+ GLOBAL| MM Potential file name                                     MM_POTENTIAL
+ GLOBAL| Coordinate file name                                          water.xyz
+ GLOBAL| Method name                                                        CP2K
+ GLOBAL| Project name                                 proton_aimd_1ns_every0.5fs
+ GLOBAL| Preferred FFT library                                             FFTW3
+ GLOBAL| Preferred diagonalization lib.                                     ELPA
+ GLOBAL| Run type                                                             MD
+ GLOBAL| All-to-all communication in single precision                          F
+ GLOBAL| FFTs using library dependent lengths                                  F
+ GLOBAL| Global print level                                                  LOW
+ GLOBAL| MPI I/O enabled                                                       T
+ GLOBAL| Total number of message passing processes                            12
+ GLOBAL| Number of threads for this process                                    1
+ GLOBAL| This output is from process                                           0
+ GLOBAL| CPU model name             Intel(R) Xeon(R) Platinum 8268 CPU @ 2.90GHz
+ GLOBAL| CPUID                                                              1003
+ GLOBAL| Compiled for CPUID                                                    0
+
+ *** HINT in environment.F:801 :: The compiler target flags (generic) used ***
+ *** to build this binary cannot exploit all extensions of this CPU model  ***
+ *** (x86_avx512). Consider compiler target flags as part of FCFLAGS and   ***
+ *** CFLAGS (ARCH file).                                                   ***
+
+
+ MEMORY| system memory details [Kb]
+ MEMORY|                        rank 0           min           max       average
+ MEMORY| MemTotal            197210676     197210676     197210676     197210676
+ MEMORY| MemFree             153491372     153491372     153491372     153491372
+ MEMORY| Buffers                 63416         63416         63416         63416
+ MEMORY| Cached               20769436      20769436      20769436      20769436
+ MEMORY| Slab                  1150800       1150800       1150800       1150800
+ MEMORY| SReclaimable           592844        592844        592844        592844
+ MEMORY| MemLikelyFree       174917068     174917068     174917068     174917068
+
+
+ *******************************************************************************
+ *   ___                                                                       *
+ *  /   \                                                                      *
+ * [ABORT]                                                                     *
+ *  \___/                 Coordinate file <water.xyz> not found.               *
+ *    |                                                                        *
+ *  O/|                                                                        *
+ * /| |                                                                        *
+ * / \                                                          topology.F:553 *
+ *******************************************************************************
+
+
+ ===== Routine Calling Stack ===== 
+
+            3 coordinate_control
+            2 topology_control
+            1 CP2K

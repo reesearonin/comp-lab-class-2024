@@ -1,0 +1,230 @@
+ DBCSR| CPU Multiplication driver                                           XSMM
+ DBCSR| Multrec recursion limit                                              512
+ DBCSR| Multiplication stack size                                           1000
+ DBCSR| Maximum elements for images                                    UNLIMITED
+ DBCSR| Multiplicative factor virtual images                                   1
+ DBCSR| Use multiplication densification                                       T
+ DBCSR| Multiplication size stacks                                             3
+ DBCSR| Use memory pool for CPU allocation                                     F
+ DBCSR| Number of 3D layers                                               SINGLE
+ DBCSR| Use MPI memory allocation                                              F
+ DBCSR| Use RMA algorithm                                                      F
+ DBCSR| Use Communication thread                                               T
+ DBCSR| Communication thread load                                             87
+ DBCSR| MPI: My node id                                                        0
+ DBCSR| MPI: Number of nodes                                                  12
+ DBCSR| OMP: Current number of threads                                         1
+ DBCSR| OMP: Max number of threads                                             1
+ DBCSR| Split modifier for TAS multiplication algorithm                  1.0E+00
+
+
+  **** **** ******  **  PROGRAM STARTED AT               2024-11-21 14:43:32.873
+ ***** ** ***  *** **   PROGRAM STARTED ON                     cm046.hpc.nyu.edu
+ **    ****   ******    PROGRAM STARTED BY                                ra3194
+ ***** **    ** ** **   PROGRAM PROCESS ID                               3674001
+  **** **  *******  **  PROGRAM STARTED IN /scratch/work/courses/CHEM-GA-2671-20
+                                           24fa/students/ra3194/comp-lab-class-2
+                                           024/Week12-IntroAIMD/Runs/Water
+
+ CP2K| version string:                    CP2K version 8.0 (Development Version)
+ CP2K| source code revision number:                                  git:8c64c6e
+ CP2K| cp2kflags: omp libint fftw3 libxc elpa parallel mpi3 scalapack xsmm max_c
+ CP2K|            ontr=4 mkl
+ CP2K| is freely available from                            https://www.cp2k.org/
+ CP2K| Program compiled at                          Sat Dec 12 18:27:15 EST 2020
+ CP2K| Program compiled on                                     cs001.nyu.cluster
+ CP2K| Program compiled for                                            nyu-intel
+ CP2K| Data directory path                    /home/wang/cp2k-20201212/cp2k/data
+ CP2K| Input file name                                                 water.inp
+ 
+ GLOBAL| Force Environment number                                              1
+ GLOBAL| Basis set file name                                           HFX_BASIS
+ GLOBAL| Potential file name                                      GTH_POTENTIALS
+ GLOBAL| MM Potential file name                                     MM_POTENTIAL
+ GLOBAL| Coordinate file name                                          water.xyz
+ GLOBAL| Method name                                                        CP2K
+ GLOBAL| Project name                                  water_aimd_1ns_every0.5fs
+ GLOBAL| Preferred FFT library                                             FFTW3
+ GLOBAL| Preferred diagonalization lib.                                     ELPA
+ GLOBAL| Run type                                                             MD
+ GLOBAL| All-to-all communication in single precision                          F
+ GLOBAL| FFTs using library dependent lengths                                  F
+ GLOBAL| Global print level                                                  LOW
+ GLOBAL| MPI I/O enabled                                                       T
+ GLOBAL| Total number of message passing processes                            12
+ GLOBAL| Number of threads for this process                                    1
+ GLOBAL| This output is from process                                           0
+ GLOBAL| CPU model name             Intel(R) Xeon(R) Platinum 8268 CPU @ 2.90GHz
+ GLOBAL| CPUID                                                              1003
+ GLOBAL| Compiled for CPUID                                                    0
+
+ *** HINT in environment.F:801 :: The compiler target flags (generic) used ***
+ *** to build this binary cannot exploit all extensions of this CPU model  ***
+ *** (x86_avx512). Consider compiler target flags as part of FCFLAGS and   ***
+ *** CFLAGS (ARCH file).                                                   ***
+
+
+ MEMORY| system memory details [Kb]
+ MEMORY|                        rank 0           min           max       average
+ MEMORY| MemTotal            395095004     395095004     395095004     395095004
+ MEMORY| MemFree             257757136     257757136     257757640     257757430
+ MEMORY| Buffers                 20128         20128         20128         20128
+ MEMORY| Cached               86045504      86045504      86045504      86045504
+ MEMORY| Slab                  4568460       4568460       4568460       4568460
+ MEMORY| SReclaimable          3578460       3578460       3578460       3578460
+ MEMORY| MemLikelyFree       347401228     347401228     347401732     347401522
+
+ 
+ GENERATE|  Preliminary Number of Bonds generated:                             0
+ GENERATE|  Achieved consistency in connectivity generation.
+
+ *******************************************************************************
+ *******************************************************************************
+ **                                                                           **
+ **     #####                         ##              ##                      **
+ **    ##   ##            ##          ##              ##                      **
+ **   ##     ##                       ##            ######                    **
+ **   ##     ##  ##   ##  ##   #####  ##  ##   ####   ##    #####    #####    **
+ **   ##     ##  ##   ##  ##  ##      ## ##   ##      ##   ##   ##  ##   ##   **
+ **   ##  ## ##  ##   ##  ##  ##      ####     ###    ##   ######   ######    **
+ **    ##  ###   ##   ##  ##  ##      ## ##      ##   ##   ##       ##        **
+ **     #######   #####   ##   #####  ##  ##  ####    ##    #####   ##        **
+ **           ##                                                    ##        **
+ **                                                                           **
+ **                                                ... make the atoms dance   **
+ **                                                                           **
+ **            Copyright (C) by CP2K developers group (2000 - 2020)           **
+ **                      J. Chem. Phys. 152, 194103 (2020)                    **
+ **                                                                           **
+ *******************************************************************************
+
+
+ TOTAL NUMBERS AND MAXIMUM NUMBERS
+
+  Total number of            - Atomic kinds:                                   2
+                             - Atoms:                                        192
+                             - Shell sets:                                   576
+                             - Shells:                                       704
+                             - Primitive Cartesian functions:                960
+                             - Cartesian basis functions:                   1536
+                             - Spherical basis functions:                   1472
+
+  Maximum angular momentum of- Orbital basis functions:                        2
+                             - Local part of the GTH pseudopotential:          2
+                             - Non-local part of the GTH pseudopotential:      0
+
+
+ SCF PARAMETERS         Density guess:                                    ATOMIC
+                        --------------------------------------------------------
+                        max_scf:                                              30
+                        max_scf_history:                                       0
+                        max_diis:                                              4
+                        --------------------------------------------------------
+                        eps_scf:                                        1.00E-06
+                        eps_scf_history:                                0.00E+00
+                        eps_diis:                                       1.00E-01
+                        eps_eigval:                                     1.00E-05
+                        --------------------------------------------------------
+                        level_shift [a.u.]:                                 0.00
+                        --------------------------------------------------------
+                        Outer loop SCF in use 
+                        No variables optimised in outer loop
+                        eps_scf                                         1.00E-06
+                        max_scf                                               10
+                        No outer loop optimization
+                        step_size                                       5.00E-01
+ 
+ MD_PAR| Molecular dynamics protocol (MD input parameters)
+ MD_PAR| Ensemble type                                                       NVT
+ MD_PAR| Number of time steps                                               1000
+ MD_PAR| Time step [fs]                                                 0.500000
+ MD_PAR| Temperature [K]                                              300.000000
+ MD_PAR| Temperature tolerance [K]                                      0.000000
+ MD_PAR| Print MD information every                                    1 step(s)
+ MD_PAR| File type   Print frequency [steps]                          File names
+ MD_PAR| Coordinates          1              water_aimd_1ns_every0.5fs-pos-1.xyz
+ MD_PAR| Velocities           1              water_aimd_1ns_every0.5fs-vel-1.xyz
+ MD_PAR| Energies             1                 water_aimd_1ns_every0.5fs-1.ener
+ MD_PAR| Dump                 1              water_aimd_1ns_every0.5fs-1.restart
+
+ ROT| Rotational analysis information
+ ROT| Principal axes and moments of inertia [a.u.]
+ ROT|                           1                   2                   3
+ ROT| Eigenvalues      2.05585957588E+08   2.18420756715E+08   2.44815971865E+08
+ ROT|      x              0.422535724749     -0.517084350433      0.744370429187
+ ROT|      y              0.905625145748      0.208115968654     -0.369500796994
+ ROT|      z              0.036147706690      0.830247865477      0.556221021872
+ ROT| Number of rotovibrational vectors                                        6
+
+ DOF| Calculation of degrees of freedom
+ DOF| Number of atoms                                                        192
+ DOF| Number of intramolecular constraints                                     0
+ DOF| Number of intermolecular constraints                                     0
+ DOF| Invariants (translations + rotations)                                    0
+ DOF| Degrees of freedom                                                     576
+
+ DOF| Restraints information
+ DOF| Number of intramolecular restraints                                      0
+ DOF| Number of intermolecular restraints                                      0
+
+ THERMOSTAT| Thermostat information for PARTICLES
+ THERMOSTAT| End of thermostat information for PARTICLES
+
+ MD_VEL| Velocities initialization
+ MD_VEL| Initial temperature [K]                                      300.000000
+ MD_VEL| COM velocity             0.0000000000    -0.0000000000     0.0000000000
+
+ Number of electrons:                                                        512
+ Number of occupied orbitals:                                                256
+ Number of molecular orbitals:                                               256
+
+ Number of orbital functions:                                               1472
+ Number of independent orbital functions:                                   1472
+
+ Extrapolation method: initial_guess
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01   20.9     0.02979138     -1059.5117370997 -1.06E+03
+     2 OT DIIS     0.80E-01   12.3     0.02151348     -1079.6271803158 -2.01E+01
+     3 OT DIIS     0.80E-01   10.0     0.01644743     -1090.1857861946 -1.06E+01
+     4 OT DIIS     0.80E-01   11.1     0.00993331     -1097.9489840315 -7.76E+00
+     5 OT DIIS     0.80E-01   10.5     0.00640250     -1100.1897484506 -2.24E+00
+     6 OT DIIS     0.80E-01   10.7     0.00449382     -1101.4259659520 -1.24E+00
+     7 OT DIIS     0.80E-01   10.3     0.00313319     -1101.9491512804 -5.23E-01
+     8 OT DIIS     0.80E-01    9.8     0.00205842     -1102.2785605865 -3.29E-01
+     9 OT DIIS     0.80E-01    9.9     0.00138024     -1102.4307083644 -1.52E-01
+    10 OT DIIS     0.80E-01   11.5     0.00110551     -1102.4906905235 -6.00E-02
+    11 OT DIIS     0.80E-01   10.6     0.00079426     -1102.5454090294 -5.47E-02
+    12 OT DIIS     0.80E-01   10.8     0.00061734     -1102.5751208108 -2.97E-02
+    13 OT DIIS     0.80E-01   10.0     0.00042219     -1102.5977421542 -2.26E-02
+    14 OT DIIS     0.80E-01   10.6     0.00030276     -1102.6113289899 -1.36E-02
+    15 OT DIIS     0.80E-01   10.7     0.00021270     -1102.6186445185 -7.32E-03
+    16 OT DIIS     0.80E-01    9.7     0.00016097     -1102.6221779986 -3.53E-03
+    17 OT DIIS     0.80E-01   10.4     0.00013225     -1102.6239634966 -1.79E-03
+    18 OT DIIS     0.80E-01   10.8     0.00010630     -1102.6251175867 -1.15E-03
+    19 OT DIIS     0.80E-01   11.4     0.00008633     -1102.6259836398 -8.66E-04
+    20 OT DIIS     0.80E-01   11.9     0.00007396     -1102.6265547387 -5.71E-04
+    21 OT DIIS     0.80E-01   10.6     0.00006396     -1102.6269783906 -4.24E-04
+    22 OT DIIS     0.80E-01   10.7     0.00005545     -1102.6273343193 -3.56E-04
+    23 OT DIIS     0.80E-01   10.8     0.00004838     -1102.6276225443 -2.88E-04
+    24 OT DIIS     0.80E-01   10.2     0.00004214     -1102.6278658023 -2.43E-04
+    25 OT DIIS     0.80E-01   10.3     0.00003799     -1102.6280438649 -1.78E-04
+    26 OT DIIS     0.80E-01   11.2     0.00003481     -1102.6281744642 -1.31E-04
+    27 OT DIIS     0.80E-01   12.8     0.00003158     -1102.6282939151 -1.19E-04
+    28 OT DIIS     0.80E-01    9.8     0.00002895     -1102.6283997808 -1.06E-04
